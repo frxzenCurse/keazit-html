@@ -1,3 +1,64 @@
 mixin footer
   footer.footer
-    |footer
+    .footer__inner 
+      .container 
+        .footer__row 
+          .footer__col.desktop
+            a.footer__logo(href="#")
+              +logo-white-svg.footer__logo-svg
+            .footer__text 
+              |© 2023 КЭАЗИТ. #[br] Все права защищены
+            .footer__made
+              |Разработка сайта: 
+              a.footer__made-link(href="#")
+                +made-svg.footer__made-svg
+          .footer__col
+            .footer__column
+              .footer__heading 
+                |Разделы
+              ul.footer__list
+                each item in ['О компании', 'Каталог', 'Информация', 'Контакты'] 
+                  li.footer__list-item 
+                    a.footer__text(href="#")
+                      |#{item} 
+            .footer__column
+              .footer__heading 
+                |Документы
+              ul.footer__list
+                each item in ['Политика конфиденциальности', 'Пользовательское соглашение', 'Карта сайта',] 
+                  li.footer__list-item 
+                    a.footer__text(href="#")
+                      |#{item} 
+          .footer__col
+            .footer__heading 
+              |Контакты
+            .footer__container 
+              .footer__item 
+                .footer__text 
+                  |Полиэфирные смолы и компаунды типа SMC, BMC
+                .footer__links 
+                  .footer__links-item 
+                    a.footer__link(href="tel:+7(910)2162378")
+                      |+7 (910) 216-23-78 
+                  .footer__links-item 
+                    a.footer__link(href="mailto:vikivanov@keaz.ru")
+                      |vikivanov@keaz.ru
+              .footer__item 
+                .footer__text 
+                  |Полиэфирные смолы и компаунды типа SMC, BMC
+                .footer__links 
+                  .footer__links-item 
+                    a.footer__link(href="tel:+7(910)7404270")
+                      |+7 (910) 740-42-70
+                  .footer__links-item 
+                    a.footer__link(href="mailto:vsavenkov@keaz.ru")
+                      |vsavenkov@keaz.ru
+          .footer__col.mobile
+            a.footer__logo(href="#")
+              +logo-white-svg.footer__logo-svg
+            .footer__text 
+              |© 2023 КЭАЗИТ. Все права защищены
+            .footer__made
+              |Разработка сайта: 
+              a.footer__made-link(href="#")
+                +made-svg.footer__made-svg

@@ -43,21 +43,23 @@ $colors: (
   white: #fff,
   blue: #002F6C,
   orange: #FE5000,
+  light-blue: #96B2D6,
+  gray: #8D959F,
 );
 @function color($variant: black) {
   @return map.get($colors, $variant);
 }
 
 // grid columns
-$col-count-m: 4;
+$col-count-m: 2;
 $col-count-t: 8;
 $col-count-d: 12;
 
-$col-pad-m: rem(20px);
-$col-pad-d: rem(60px);
+$col-pad-m: rem(15px);
+$col-pad-d: rem(135px);
 
-$col-gap-d: rem(20px);
-$col-gap-m: rem(10px);
+$col-gap-d: rem(30px);
+$col-gap-m: rem(20px);
 
 $col-width-m: '((100vw - (#{$col-pad-m} * 2) - (#{$col-gap-m} * #{$col-count-m - 1})) / #{$col-count-m})';
 $col-width-t: '((100vw - (#{$col-pad-m} * 2) - (#{$col-gap-m} * #{$col-count-t - 1})) / #{$col-count-t})';

@@ -1,0 +1,16 @@
+.section {
+
+  &--first {
+    padding-top: rem(122px);
+    @media #{media("<")} {
+      padding-top: rem(130px);
+    }
+  }
+
+  &__title {
+    @include fsl(52px, 110%);
+    @media #{media("<")} {
+      @include fsl(28px);
+    }
+  }
+}

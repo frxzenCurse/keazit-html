@@ -1,3 +1,44 @@
 mixin header
   header.header
-    |header
+    .container
+      .header__inner
+        .header__desktop
+          .header__row 
+            .header__col
+              a.header__logo(href="#")
+                +logo-svg.header__logo-svg
+              nav.header__nav
+                .header__nav-item 
+                  a.header__link(href="#")
+                    .header__text 
+                      |О компании
+                .header__nav-item 
+                  .header__item
+                    .header__text 
+                      |Каталог
+                    .header__icon 
+                      +arrow-svg.header__svg
+                .header__nav-item 
+                  .header__item
+                    .header__text 
+                      |Информация
+                    .header__icon 
+                      +arrow-svg.header__svg
+                .header__nav-item 
+                  a.header__link(href="#")
+                    .header__text 
+                      |Контакты 
+            .header__col
+              a.header__phone(href="tel:+74842922199")
+                |+7 4842 922-199 
+              .header__button 
+                +btn.btn--header
+                  |Заказать звонок
+        .header__mobile
+          .header__row 
+            .header__col
+              a.header__logo(href="#")
+                +logo-svg.header__logo-svg
+            .header__col
+              .header__burger 
+                +burger-svg.header__burger-svg

@@ -1,0 +1,21 @@
+.btn {
+  padding: rem(16px) 0;
+
+  height: rem(48px);
+  width: rem(230px);
+
+  text-align: center;
+  cursor: pointer;
+  border-radius: rem(45px);
+  background-color: color(orange);
+  color: color(white);
+  @include fsl(14px, 120%);
+
+  &--header {
+    width: rem(170px);
+    
+    background-color: color(white);
+    border: 1px solid color(orange);
+    color: color(orange);
+  }
+}

@@ -9,7 +9,7 @@ $files: (("Manrope-Medium", 500), ("Manrope-Bold", 700));
   }
 }
 
-$files-second: (("Raleway-Medium", 500), ("Raleway-Bold", 700));
+$files-second: (("Raleway-Medium", 500), ("Raleway-SemiBold", 600), ("Raleway-Bold", 700));
 
 @each $filename, $font-weight in $files-second {
   @font-face {

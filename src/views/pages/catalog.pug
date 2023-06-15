@@ -1,0 +1,57 @@
+extends ../app
+
+
+block content
+  .catalog-page 
+    section.section.section--first 
+      .container 
+        +breadcrumbs(page = 'каталог')
+        h1.section__title 
+          |Каталог
+        .catalog-page__inner
+          .catalog-page__row
+            .catalog-page__col
+              a.card(href="#") 
+                .card__img 
+                  +picture('card-1.jpg')
+                .card__bot 
+                  .card__label 
+                    |Полиэфирная смола
+                  .card__title 
+                    |Полиэфирная смола #[br] конструкционная 
+                  .card__btn 
+                    |Подробнее
+            .catalog-page__col
+              a.catalog-page__category(href="#") 
+                .catalog-page__category-img 
+                  +picture('category-1.jpg')
+                .catalog-page__category-content
+                  .card__label.alt
+                    |Полиэфирная смола
+                  .card__title.alt
+                    |Полиэфирная смола конструкционная
+                  .card__btn 
+                    |Подробнее
+          .catalog-page__row.reverse
+            .catalog-page__col
+              a.card(href="#") 
+                .card__img 
+                  +picture('card-2.jpg')
+                .card__bot 
+                  .card__label 
+                    |Полиэфирная смола
+                  .card__title 
+                    |Полиэфирная смола #[br] конструкционная 
+                  .card__btn 
+                    |Подробнее
+            .catalog-page__col
+              a.catalog-page__category.orange(href="#") 
+                .catalog-page__category-img 
+                  +picture('category-2.jpg')
+                .catalog-page__category-content
+                  .card__label.alt
+                    |Полиэфирная смола
+                  .card__title.alt
+                    |Полиэфирная смола конструкционная
+                  .card__btn 
+                    |Подробнее

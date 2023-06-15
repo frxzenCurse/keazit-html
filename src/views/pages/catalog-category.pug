@@ -1,0 +1,44 @@
+extends ../app
+
+
+block content
+  .category-page 
+    section.section.section--first 
+      .container 
+        +breadcrumbs(items=['каталог'] page = 'Полиэфирные смолы')
+        h1.section__title 
+          |Полиэфирные смолы
+        .category-page__row 
+          .category-page__col
+            .category-page__categories
+              .category-page__categories-title 
+                |Категории
+              .category-page__categories-list 
+                each item, i in ['Полиэфирные смолы', 'Материалы', 'Литье пластмасс (РПА, ТПА)', 'Прессование деталей', ]
+                  .category-page__categories-item 
+                    if (i === 0)
+                      .category-page__categories-link.active
+                        .category-page__categories-text 
+                          |#{item}
+                        .category-page__categories-icon
+                          +arrow-svg.category-page__categories-svg
+                    else
+                      a.category-page__categories-link(href="#")
+                        .category-page__categories-text 
+                          |#{item}
+                        .category-page__categories-icon
+                          +arrow-svg.category-page__categories-svg
+          .category-page__col
+            .category-page__grid 
+              - for (i = 0; i < 3; i++)
+                each item in ['card-3.jpg', 'card-4.jpg', 'card-5.jpg', ]
+                  a.card(href="#") 
+                    .card__img 
+                      +picture(item)
+                    .card__bot 
+                      .card__label 
+                        |Полиэфирная смола
+                      .card__title 
+                        |Полиэфирная смола #[br] конструкционная 
+                      .card__btn 
+                        |Подробнее

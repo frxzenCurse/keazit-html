@@ -1,0 +1,105 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 777;
+
+  width: 100vw;
+  height: rem(90px);
+
+  background-color: color(white);
+  border-bottom: 1px solid #DFDFDF;
+
+  &__inner {
+    padding: rem(20px) 0 rem(22px);
+    @media #{media("<")} {
+      padding: rem(24px) 0;
+    }
+  }
+
+  &__desktop {
+    @media #{media("<")} {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    @media #{media(">")} {
+      display: none;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-svg {
+    width: rem(149px);
+    height: rem(41px);
+  }
+
+  &__nav {
+    margin-left: rem(115px);
+    
+    display: flex;
+    align-items: center;
+  }
+  &__nav-item {
+
+    &:not(:first-child) {
+      margin-left: rem(40px);
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    @include fsl(14px, 120%);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-left: rem(5px);
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__svg {
+    --size: #{rem(10px)};
+
+    width: var(--size);
+    height: var(--size);
+  }
+
+  &__phone {
+    @include fsl(20px, 120%);
+  }
+
+  &__button {
+    margin-left: rem(32px);
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+  }
+  &__burger-svg {
+    width: rem(24px);
+    height: rem(24px);
+  }
+}
