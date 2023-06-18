@@ -1,0 +1,77 @@
+extends ../app
+
+
+block content
+  .card-page 
+    section.section.section--first 
+      .card-page__section
+        .container 
+          +breadcrumbs(items=['каталог'] page = 'Полиэфирная смола конструкционная (Турция) 1кг')
+          h1.card-page__title 
+            |Полиэфирная смола конструкционная (Турция) 1кг
+          .card-page__container
+            .card-page__slider
+              .card-page__buttons
+                .card-page__buttons-item
+                  button.arrow-btn.left(data-slider-button = '1') 
+                    +arrow-btn-svg.arrow-btn__icon
+                .card-page__buttons-item
+                  button.arrow-btn(data-slider-button = '2') 
+                    +arrow-btn-svg.arrow-btn__icon
+              .swiper-container.swiper-container--slide-height-max(data-slider-id='card' data-slider-prev='1' data-slider-next='2')
+                .swiper-wrapper
+                  - for (i = 0; i < 4; i++)
+                    .swiper-slide
+                      .card-page__slider-img 
+                        +picture('product-1.jpg')
+          .card-page__row 
+            .card-page__col(data-tabs='')
+              .card-page__tabs 
+                .card-page__tab.active(data-tabs-item='')
+                  |ХАРАКТЕРИСТИКИ
+                .card-page__tab(data-tabs-item='')
+                  |ОПИСАНИЕ
+              .card-page__blocks 
+                .card-page__block.active(data-tabs-block='')
+                  .card-page__wrapper
+                    .card-page__table
+                      .card-page__table-head 
+                        .card-page__table-grid 
+                          each item, i in ['Показатель', 'Значение', 'Ед. изм.', 'Метод анализа', ]
+                            .card-page__table-label(class=(i > 0 ? 'center' : ''))
+                              |#{item}
+                      .card-page__table-body 
+                        .card-page__table-row
+                          .card-page__table-grid 
+                            .card-page__table-col
+                              .card-page__table-heading
+                                |Внешний вид
+                            each item in ['Прозрачная светло-желтая жидкость без посторонних включенийние', '-', 'Визуальный']
+                              .card-page__table-col
+                                .card-page__table-item
+                                  |#{item}
+                        - for (i = 0; i < 5; i++)
+                          .card-page__table-row
+                            .card-page__table-grid 
+                              .card-page__table-col
+                                .card-page__table-heading
+                                  |Динамическая вязкость при 23 °C
+                              each item in ['750-900', 'мПа*с', 'ГОСТ 25271-93']
+                                .card-page__table-col
+                                  .card-page__table-item
+                                    |#{item}
+                .card-page__block(data-tabs-block='')
+                  .card-page__list 
+                    - for (i = 0; i < 3; i++)
+                      .card-page__list-item 
+                        .card-page__list-heading 
+                          |ОБЩАЯ ИНФОРМАЦИЯ
+                        .card-page__list-text 
+                          |Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.
+            .card-page__col
+              a.button(href="#")
+                .button__inner 
+                  .button__icon 
+                    +doc-svg.button__svg 
+                  .button__text 
+                    |Скачать тут

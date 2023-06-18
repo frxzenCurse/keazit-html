@@ -66,6 +66,7 @@ export function swiperInit() {
           };
           break;
         case 'docs':
+        case 'card':
           slider_options = {
             slidesPerView: "auto",
             spaceBetween: 0,

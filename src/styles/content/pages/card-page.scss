@@ -1,0 +1,228 @@
+.card-page {
+  
+  &__title {
+    @include fsl(32px, 110%);
+    @media #{media("<")} {
+      @include fsl(28px);
+    }
+  }
+
+  &__section {
+    padding-bottom: rem(80px);
+    @media #{media("<")} {
+      padding-bottom: rem(60px);
+    }
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: rem(314px);
+      bottom: 0;
+      z-index: -1;
+      @media #{media("<")} {
+        top: rem(230px);
+      }
+
+      background: linear-gradient(180deg, #EAEDF0 0%, rgba(234, 237, 240, 0) 100%);
+      opacity: 0.6;
+    }
+  }
+  
+  &__slider {
+    position: relative;
+    z-index: 0;
+    
+    overflow: hidden;
+  }
+  &__slider-img {
+    height: rem(437px);
+  }
+  
+  &__buttons {
+    position: absolute;
+    left: rem(24px);
+    right: rem(24px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    pointer-events: none;
+  }
+
+  &__row {
+    margin-top: rem(51px);
+    display: flex;
+    justify-content: space-between;
+    @media #{media("<")} {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    flex-shrink: 0;
+
+    &:nth-child(1) {
+      width: rem(800px);
+      @media #{media("<")} {
+        width: auto;
+      }
+    }
+
+    &:nth-child(2) {
+      width: rem(287px);
+      @media #{media("<")} {
+        order: -1;
+        margin-bottom: rem(30px);
+
+        width: auto;
+      }
+    }
+  }
+
+  &__tabs {
+    display: flex;
+  }
+
+  &__tab {
+    @include fsl(20px, 110%);
+    transition: $transition;
+    color: color(gray);
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-left: rem(26px);
+    }
+
+    &.active {
+      color: color(orange);
+      cursor: default;
+    }
+  }
+
+  &__wrapper {
+    @media #{media("<")} {
+      padding: 0 rem(15px);
+      margin-left: rem(-15px);
+      padding-bottom: rem(16px);
+
+      display: flex;
+
+      width: calc(100% + #{rem(30px)});
+      overflow-x: auto;
+      @include styled-scrollbar;
+    }
+  }
+
+  &__table {
+    margin-top: rem(20px);
+    @media #{media("<")} {
+      flex-shrink: 0;
+    }
+  }
+  &__table-head {
+    height: rem(40px);
+
+    background-color: #ECEFF1;
+  }
+  &__table-grid {
+    padding: 0 rem(40px) 0 rem(20px);
+
+    display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: rem(200px) rem(235px) auto auto;
+    @media #{media("<")} {
+      grid-template-columns: rem(225px) rem(235px) rem(120px) rem(160px);
+    }
+    height: 100%;
+    align-items: center;
+  }
+  &__table-label {
+    font-weight: 600;
+    color: color(gray);
+    @include fsl(12px, 120%);
+
+    &.center {
+      text-align: center;
+    }
+  }
+  &__table-body {}
+  &__table-row {
+
+    margin-top: rem(12px);
+    padding-bottom: rem(15px);
+
+    border-bottom: 1px solid #ECEFF1;
+  }
+  &__table-heading {
+    font-weight: 600;
+    @include fsl(12px, 120%);
+  }
+  &__table-item {
+    text-align: center;
+    font-weight: 500;
+    @include fsl(12px, 120%);
+  }
+
+  &__block {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__list {
+    margin-top: rem(60px);
+    @media #{media("<")} {
+      margin-top: rem(20px);
+    }
+  }
+  &__list-item {
+    &:not(:first-child) {
+      margin-top: rem(27px);
+      @media #{media("<")} {
+        margin-top: rem(24px);
+      }
+    }
+  }
+  &__list-heading {
+    margin-bottom: rem(15px);
+  }
+  &__list-text {
+    font-weight: 500;
+  }
+
+  &__container {
+    margin-top: rem(32px);
+    @media #{media("<")} {
+      margin-top: rem(20px);
+      display: block;
+    }
+    display: flex;
+  }
+  &__container-col {
+    flex-shrink: 0;
+
+    &:nth-child(1) {
+      width: calc(#{$col-part-d} * 3);
+      @media #{media("<")} {
+        width: auto;
+      }
+      // background-color: color(white);
+    }
+    &:nth-child(2) {
+      width: calc(#{$col-part-d} * 9 - #{$col-gap-d});
+      @media #{media("<")} {
+        width: auto;
+      }
+    }
+  }
+}

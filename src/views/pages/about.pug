@@ -47,7 +47,8 @@ block content
             .section__title 
               |Наши сертификаты и награды
             .about-page__btn 
-              |BTN 
+              button.arrow-btn(data-slider-button = '2') 
+                +arrow-btn-svg.arrow-btn__icon
           .about-page__slider
             .swiper-container.swiper-container--slide-width-auto.swiper-container--slide-height-max.swiper-container--visible(data-slider-id='docs' data-slider-prev='' data-slider-next='2')
               .swiper-wrapper

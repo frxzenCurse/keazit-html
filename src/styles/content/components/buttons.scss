@@ -22,3 +22,84 @@
     color: color(orange);
   }
 }
+
+.arrow-btn {
+  $comp: &;
+  display: flex;
+  align-items: center;
+
+  pointer-events: all;
+  cursor: pointer;
+
+  &__icon {
+    --size: #{rem(66px)};
+    @media #{media("<")} {
+      --size: #{rem(52px)};
+    }
+    width: var(--size);
+    height: var(--size);
+  }
+
+  &.left {
+    #{$comp}__icon {
+      transform: rotate(180deg);
+    }
+  }
+  &.disabled {
+    pointer-events: none;
+
+    #{$comp}__icon {
+      rect {
+        stroke: rgba(255, 255, 255, 0.1);
+
+        &:nth-child(2) {
+          fill: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+}
+
+.button {
+  padding: rem(8px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: rem(65px);
+
+  border-radius: rem(65px);
+  border: 1px solid color(orange);
+
+  &__inner {
+    padding: 0 rem(23px);
+
+    display: flex;
+    align-items: center;
+    height: rem(48px);
+    width: 100%;
+
+    border-radius: rem(65px);
+    background-color: color(orange);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &__svg {
+    --size: #{rem(22px)};
+
+    width: var(--size);
+    height: var(--size);
+  }
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    color: color(white);
+    @include fsl(14px, 120%);
+  }
+}
