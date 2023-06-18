@@ -7,6 +7,10 @@
       "title": "Главная"
     },
     {
+      "href": "/about",
+      "title": "О компании"
+    },
+    {
       "href": "/catalog",
       "title": "Каталог"
     },

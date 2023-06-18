@@ -65,6 +65,13 @@ export function swiperInit() {
             loop: true,
           };
           break;
+        case 'docs':
+          slider_options = {
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            speed: 500,
+          };
+          break;
         case 11:
         case 'm11':
           slider_options = {

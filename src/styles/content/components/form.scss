@@ -1,0 +1,123 @@
+.form {
+  padding: rem(118px) 0;
+  margin: 0 auto;
+  @media #{media("<")} {
+    padding: rem(90px) rem(33px);
+    margin: 0;
+    width: auto;
+  }
+
+  width: rem(630px);
+
+  &__label {
+    margin-bottom: rem(16px);
+
+    text-align: center;
+    color: color(light-blue);
+    letter-spacing: 0.1em;
+    @include fsl(14px, 120%);
+    text-transform: uppercase;
+    @media #{media("<")} {
+      @include fsl(12px);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(18px);
+
+    text-align: center;
+    color: color(white);
+    @include fsl(52px, 110%);
+    @media #{media("<")} {
+      @include fsl(28px);
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: color(white);
+    font-weight: 500;
+    @media #{media("<")} {
+      @include fsl(12px);
+    }
+  }
+
+  &__form {
+    margin-top: rem(30px);
+    @media #{media("<")} {
+      margin-top: rem(15px);
+    }
+  }
+
+  &__item {
+
+    &:not(:first-child) {
+      margin-top: rem(20px);
+      @media #{media("<")} {
+        margin-top: rem(15px);
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(30px);
+    @media #{media("<")} {
+      gap: rem(16px);
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__input {
+    padding: 0 rem(20px);
+
+    height: rem(48px);
+    width: 100%;
+
+    background-color: color(white);
+    border-radius: rem(15px);
+    border: 1px solid #EDEDED;
+    font-weight: 500;
+    @include fsl(14px, 120%);
+
+    @include placeholder {
+      color: color(gray);
+    }
+  }
+
+  &__textarea {
+    padding: rem(16px) rem(20px);
+
+    height: rem(121px);
+    width: 100%;
+
+    resize: none;
+    background-color: color(white);
+    border-radius: rem(15px);
+    border: 1px solid #EDEDED;
+    font-weight: 500;
+    @include fsl(14px, 120%);
+
+    @include placeholder {
+      color: color(gray);
+    }
+  }
+
+  &__caption {
+    margin: 0 auto;
+    max-width: rem(525px);
+    color: color(white);
+    text-align: center;
+    font-weight: 500;
+    @include fsl(14px, 120%);
+    @media #{media("<")} {
+      max-width: none;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}

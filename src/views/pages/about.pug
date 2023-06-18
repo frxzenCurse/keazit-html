@@ -1,0 +1,60 @@
+extends ../app
+
+block footer
+  +footer(block = 'text-us')
+
+block content
+  .about-page 
+    section.section.intro
+      .intro__container 
+        .intro__row
+          .intro__col
+            +breadcrumbs(page='О компании')
+            h1.section__title.alt
+              |О компании
+            .intro__text 
+              each text in ['ООО «КЗКМ» было основано в 2016 году и специализируется на технологии производства сырья и высокотехнологичных пластмасс, которая уникальна для России.', 'Компания поставляет на российский рынок импортозамещающие пластики и смолы собственного производства. В 2017 году ГК заняла первое место в конкурсе «Инновации и изобретения 2017 года» в номинации «Инновационный проект».', 'Награды был удостоен проект: «Разработка и производство стирольного связующего и термореактивных наполненных прессматериалов».']
+                p
+                  |#{text}
+          .intro__col
+            .intro__wrapper 
+              .intro__img 
+                +picture('about.jpg')
+              .intro__icon 
+                +about-svg.intro__svg
+    section.about-page__section.section
+      .container 
+        .about-page__grid 
+          .about-page__card
+            .about-page__card-icon 
+              +about-1-svg.about-page__card-svg
+            .about-page__card-text 
+              |Клиентоориентированность
+          .about-page__card
+            .about-page__card-icon 
+              +about-2-svg.about-page__card-svg
+            .about-page__card-text 
+              |Развитие команды
+          .about-page__card
+            .about-page__card-icon 
+              +about-3-svg.about-page__card-svg
+            .about-page__card-text 
+              |Экологическая ответственность
+        .about-page__inner 
+          .category 
+            |— награды
+          .about-page__top 
+            .section__title 
+              |Наши сертификаты и награды
+            .about-page__btn 
+              |BTN 
+          .about-page__slider
+            .swiper-container.swiper-container--slide-width-auto.swiper-container--slide-height-max.swiper-container--visible(data-slider-id='docs' data-slider-prev='' data-slider-next='2')
+              .swiper-wrapper
+                - for (i = 0; i < 9; i++)
+                  .swiper-slide.about-page__slider-slide
+                    .about-page__doc
+                      .about-page__doc-img 
+                        +picture('doc.jpg')
+                      .about-page__doc-title 
+                        |Сертификат #[br] от “КЭАЗ”

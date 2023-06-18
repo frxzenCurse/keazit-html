@@ -12,5 +12,9 @@
     @media #{media("<")} {
       @include fsl(28px);
     }
+
+    &.alt {
+      @include f-second;
+    }
   }
 }

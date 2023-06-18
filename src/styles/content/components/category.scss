@@ -1,0 +1,12 @@
+.category {
+  margin-bottom: rem(25px);
+
+  color: color(gray);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  @include fsl(14px, 120%);
+  @media #{media("<")} {
+    margin-bottom: rem(20px);
+    @include fsl(12px);
+  }
+}
