@@ -3,35 +3,35 @@
 
   "routes": [
     {
-      "href": "/main",
+      "href": "main",
       "title": "Главная"
     },
     {
-      "href": "/about",
+      "href": "about",
       "title": "О компании"
     },
     {
-      "href": "/catalog",
+      "href": "catalog",
       "title": "Каталог"
     },
     {
-      "href": "/catalog-category",
+      "href": "catalog-category",
       "title": "Каталог внутренняя"
     },
     {
-      "href": "/card",
+      "href": "card",
       "title": "Карточка"
     },
     {
-      "href": "/card-filters",
+      "href": "card-filters",
       "title": "Карточка с фильтрами"
     },
     {
-      "href": "/news",
+      "href": "news",
       "title": "Новость"
     },
     {
-      "href": "/article",
+      "href": "article",
       "title": "Статья"
     }
   ]
