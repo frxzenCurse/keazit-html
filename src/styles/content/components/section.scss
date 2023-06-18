@@ -17,4 +17,11 @@
       @include f-second;
     }
   }
+
+  &__heading {
+    @include fsl(32px, 110%);
+    @media #{media("<")} {
+      @include fsl(28px);
+    }
+  }
 }

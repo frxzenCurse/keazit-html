@@ -1,5 +1,5 @@
 mixin footer
-  .footer-wrapper(class=(attributes.block ? 'alt' : ''))
+  .footer-wrapper(class=(attributes.block == 'text-us' ? 'alt' : ''))
     if (attributes.block)
       case attributes.block 
         when 'text-us'
@@ -95,4 +95,27 @@ mixin text-us
             |Отправить
 
 mixin text-us-white
-  |text us white
+  .form-wrapper
+    .form-wrapper__img 
+      +picture('footer-bg.jpg')
+    .form.form--white
+      .form__label
+        |Обратная связь
+      .form__title 
+        |Напишите нам
+      .form__text 
+        |И в ближайшее время с вами свяжется наш мендежер
+      form.form__form(action="/")
+        .form__item 
+          .form__grid 
+            input.form__input(type="text" placeholder='Ваше имя')
+            input.form__input(type="text" placeholder='Ваш номер телефона')
+        .form__item 
+          textarea.form__textarea(placeholder='Опишите ваш вопрос')
+        .form__item 
+          .form__caption 
+            |При нажатии на кнопку ”Отправить” вы автоматически соглашаетесь на персональную обработку данных
+        .form__item 
+          .form__btn 
+            button.btn
+              |Отправить

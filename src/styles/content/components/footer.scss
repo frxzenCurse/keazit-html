@@ -169,13 +169,15 @@
   &::before {
     content: "";
     position: absolute;
-    top: rem(-134px);
+    // top: rem(-134px);
+    bottom: rem(-555px);
     right: rem(46px);
     z-index: -1;
     @media #{media("<")} {
       right: auto;
       left: rem(-60px);
-      top: rem(-17px);
+      // top: rem(-17px);
+      bottom: rem(-75px);
 
       width: rem(574px);
       height: rem(694px);

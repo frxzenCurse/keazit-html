@@ -17,6 +17,22 @@
     {
       "href": "/catalog-category",
       "title": "Каталог внутренняя"
+    },
+    {
+      "href": "/card",
+      "title": "Карточка"
+    },
+    {
+      "href": "/card-filters",
+      "title": "Карточка с фильтрами"
+    },
+    {
+      "href": "/news",
+      "title": "Новость"
+    },
+    {
+      "href": "/article",
+      "title": "Статья"
     }
   ]
 }

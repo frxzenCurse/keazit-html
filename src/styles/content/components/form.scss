@@ -1,4 +1,5 @@
 .form {
+  $comp: &;
   padding: rem(118px) 0;
   margin: 0 auto;
   @media #{media("<")} {
@@ -8,6 +9,18 @@
   }
 
   width: rem(630px);
+
+  &--white {
+    #{$comp}__label {
+      color: color(gray);
+    }
+    #{$comp}__title, #{$comp}__text {
+      color: #292D32;
+    }
+    #{$comp}__caption {
+      color: color(gray);
+    }
+  }
 
   &__label {
     margin-bottom: rem(16px);
@@ -119,5 +132,20 @@
   &__btn {
     display: flex;
     justify-content: center;
+  }
+}
+
+.form-wrapper {
+  position: relative;
+  z-index: 0;
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
   }
 }
