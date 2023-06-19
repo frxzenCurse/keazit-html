@@ -33,6 +33,10 @@
     {
       "href": "article",
       "title": "Статья"
+    },
+    {
+      "href": "contacts",
+      "title": "Контакты"
     }
   ]
 }

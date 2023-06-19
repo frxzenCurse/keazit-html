@@ -11,11 +11,11 @@
 		<link href="app.css" rel="stylesheet">
 	</head>
 
-	<body class="body">
+	<body class="body body--notransition">
 		<div class="wrapper">
 			<header class="header">
-				<div class="container">
-					<div class="header__inner">
+				<div class="header__inner">
+					<div class="container">
 						<div class="header__desktop">
 							<div class="header__row">
 								<div class="header__col"><a class="header__logo" href="#"><svg class="header__logo-svg" width="149" height="41" viewBox="0 0 149 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +143,7 @@
 											<path d="M27.8655 29.5795V4.63265H33.7953V40.8832L11.2806 27.8655V19.9899L27.8655 29.5795Z" fill="#FE5000"></path>
 										</svg></a></div>
 								<div class="header__col">
-									<div class="header__burger"><svg class="header__burger-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<div class="header__burger" data-header-btn=""><svg class="header__burger-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_309_1011)">
 												<path d="M21 6.5H14" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
 												<path d="M10 17.5H3" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
@@ -154,8 +154,54 @@
 													<rect width="24" height="24" fill="white"></rect>
 												</clippath>
 											</defs>
+										</svg><svg class="header__burger-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_310_2053)">
+												<path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M18 18L6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</g>
+											<defs>
+												<clippath id="clip0_310_2053">
+													<rect width="24" height="24" fill="white"></rect>
+												</clippath>
+											</defs>
 										</svg></div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-menu">
+					<div class="header-menu__container">
+						<ul class="header-menu__list">
+							<li class="header-menu__item"><a class="header-menu__button" href="#">
+									<div class="header-menu__text">О компании</div>
+								</a></li>
+							<li class="header-menu__item" data-accordion="">
+								<div class="header-menu__button" data-accordion-button="">
+									<div class="header-menu__text">Каталог</div>
+									<div class="header-menu__icon"><svg class="header-menu__svg" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.3002 3.72919L5.58353 6.44585C5.2627 6.76669 4.7377 6.76669 4.41686 6.44585L1.7002 3.72919" stroke="#292D32" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></div>
+								</div>
+								<div class="header-menu__dropdown" data-accordion-dropdown="">
+									<ul class="header-menu__dropdown-list">
+										<li class="header-menu__dropdown-item"><a class="header-menu__link" href="#">Полиэфирные смолы</a></li>
+										<li class="header-menu__dropdown-item"><a class="header-menu__link" href="#">Материалы</a></li>
+										<li class="header-menu__dropdown-item"><a class="header-menu__link" href="#">Литье пластмасс (РПА, ТПА)</a></li>
+										<li class="header-menu__dropdown-item"><a class="header-menu__link" href="#">Прессование деталей</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="header-menu__item"><a class="header-menu__button" href="#">
+									<div class="header-menu__text">Информация</div>
+								</a></li>
+							<li class="header-menu__item"><a class="header-menu__button" href="#">
+									<div class="header-menu__text">Контакты</div>
+								</a></li>
+						</ul>
+						<div class="header-menu__bot"><a class="header-menu__phone" href="tel:+74842922199">+7 4842 922-199</a>
+							<div class="header-menu__btn">
+								<div class="btn btn--header">Заказать звонок</div>
 							</div>
 						</div>
 					</div>
