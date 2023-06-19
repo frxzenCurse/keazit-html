@@ -9,4 +9,8 @@
     margin-bottom: rem(20px);
     @include fsl(12px);
   }
+
+  &--req {
+    color: color(light-blue);
+  }
 }

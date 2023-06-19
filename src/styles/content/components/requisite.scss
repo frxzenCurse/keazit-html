@@ -1,0 +1,56 @@
+.requisite {
+  padding: rem(124px) 0;
+  @media #{media("<")} {
+    padding: rem(100px) 0 rem(80px);
+  }
+
+  &__title {
+    margin-bottom: rem(37px);
+    @media #{media("<")} {
+      margin-bottom: rem(28px);
+      @include fsl(28px);
+    }
+    color: color(white);
+    @include fsl(40px, 110%);
+  }
+
+  &__row {
+    display: flex;
+    @media #{media("<")} {
+      display: block;
+    }
+  }
+
+  &__col {
+    flex-shrink: 0;
+
+    &:nth-child(1) {
+      width: rem(416px);
+      @media #{media("<")} {
+        width: auto;
+      }
+    }
+    &:nth-child(2) {
+      margin-left: rem(144px);
+      width: rem(483px);
+      @media #{media("<")} {
+        margin-left: 0;
+        margin-top: rem(30px);
+        width: auto;
+      }
+    }
+  }
+
+  &__text {
+    color: color(white);
+    font-weight: 500;
+    @include fsl(18px, 120%);
+    @media #{media("<")} {
+      @include fsl(16px);
+    }
+
+    &:not(:first-child) {
+      margin-top: rem(15px);
+    }
+  }
+}

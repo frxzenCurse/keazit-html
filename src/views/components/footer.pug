@@ -1,11 +1,13 @@
 mixin footer
-  .footer-wrapper(class=(attributes.block == 'text-us' ? 'alt' : ''))
+  .footer-wrapper(class=(attributes.block == 'text-us' || attributes.block == 'requisite' ? 'alt' : ''))
     if (attributes.block)
       case attributes.block 
         when 'text-us'
           +text-us
         when 'text-us-white'
           +text-us-white
+        when 'requisite'
+          +requisite
     footer.footer(class=(attributes.block ? 'footer--big' : ''))
       .footer__inner 
         .container 
@@ -119,3 +121,22 @@ mixin text-us-white
           .form__btn 
             button.btn
               |Отправить
+
+mixin requisite 
+  .requisite
+    .container
+      .category.category--req
+        |— Реквизиты
+      .requisite__title
+        |Наши реквизиты
+      .requisite__row 
+        .requisite__col
+          .requisite__text 
+            |Общество с ограниченной ответственностью «Курский завод композитных материалов»
+          .requisite__text 
+            |ИНН: 4632210994 #[br] КПП: 463201001 #[br] ОГРН 1164632050318
+        .requisite__col
+          .requisite__text 
+            |Закрытое акционерное общество «ЭЛАТ-Инструмент»
+          .requisite__text 
+            |ИНН 4632120042 #[br] КПП 463201001 #[br] ОГРН 1104632003850

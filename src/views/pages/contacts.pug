@@ -1,0 +1,80 @@
+extends ../app
+
+block footer
+  +footer(block = 'requisite')
+
+block content
+  .contacts-page 
+    section.section.intro
+      .intro__container 
+        .intro__row
+          .intro__col
+            +breadcrumbs(page='Контакты')
+            h1.section__title.alt
+              |Контактная #[br] информация
+            .contacts-page__list 
+              .contacts-page__item 
+                .contacts-page__icon 
+                  +calendar-svg.contacts-page__svg
+                .contacts-page__item-content 
+                  .contacts-page__item-label 
+                    |Часы и дни работы
+                  .contacts-page__item-text 
+                    |Понедельник - Пятница: с 8:00 до 17:00 #[br] Суббота - Воскресенье: выходной
+              .contacts-page__item 
+                .contacts-page__icon 
+                  +loc-svg.contacts-page__svg
+                .contacts-page__item-content 
+                  .contacts-page__item-label 
+                    |Часы и дни работы
+                  .contacts-page__item-text 
+                    |Понедельник - Пятница: с 8:00 до 17:00 #[br] Суббота - Воскресенье: выходной
+          .intro__col
+            .intro__wrapper 
+              .intro__img 
+                +picture('contacts.jpg')
+              .intro__icon 
+                +contacts-svg.intro__svg
+    section.contacts-page__section 
+      .container 
+        .contacts-page__cards 
+          .contacts-page__card
+            .contacts-page__card-wrapper
+              .contacts-page__card-title 
+                |Полиэфирные смолы, компаунды типа SMC и SMC:
+              .contacts-page__card-grid 
+                .contacts-page__card-item 
+                  .contacts-page__card-label 
+                    |Директор
+                  .contacts-page__card-text 
+                    |Иванов Виктор Сергеевич
+                .contacts-page__card-item 
+                  .contacts-page__card-label 
+                    |Телефон
+                  .contacts-page__card-text 
+                    |+7 (910) 216-23-78
+                .contacts-page__card-item 
+                  .contacts-page__card-label 
+                    |E-mail
+                  .contacts-page__card-text 
+                    |vikivanov@keaz.ru
+          .contacts-page__card
+            .contacts-page__card-wrapper
+              .contacts-page__card-title 
+                |Литье пластмасс (РПА, ТПА), прямое прессование пластмасс, прессование деталей
+              .contacts-page__card-grid 
+                .contacts-page__card-item 
+                  .contacts-page__card-label 
+                    |Директор
+                  .contacts-page__card-text 
+                    |Савенков Вадим Владимирович
+                .contacts-page__card-item 
+                  .contacts-page__card-label 
+                    |Телефон
+                  .contacts-page__card-text 
+                    |+7 (910) 740-42-70
+                .contacts-page__card-item 
+                  .contacts-page__card-label 
+                    |E-mail
+                  .contacts-page__card-text 
+                    |vsavenkov@keaz.ru
