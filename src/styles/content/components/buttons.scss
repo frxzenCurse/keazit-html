@@ -20,6 +20,12 @@
     background-color: color(white);
     border: 1px solid color(orange);
     color: color(orange);
+    @media #{media("<")} {
+      width: 100%;
+
+      color: white;
+      background: transparent;
+    }
   }
 }
 

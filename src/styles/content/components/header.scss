@@ -1,4 +1,5 @@
 .header {
+  $comp: &;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,6 +10,19 @@
 
   background-color: color(white);
   border-bottom: 1px solid #DFDFDF;
+
+  &--menu {
+    .header-menu {
+      transform: none;
+    }
+
+    #{$comp}__burger-svg {
+      display: none;
+    }
+    #{$comp}__burger-close {
+      display: block;
+    }
+  }
 
   &__inner {
     padding: rem(20px) 0 rem(22px);
@@ -99,6 +113,10 @@
     align-items: center;
   }
   &__burger-svg {
+    width: rem(24px);
+    height: rem(24px);
+  }
+  &__burger-close {
     width: rem(24px);
     height: rem(24px);
   }

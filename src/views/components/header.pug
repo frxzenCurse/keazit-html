@@ -1,7 +1,7 @@
 mixin header
   header.header
-    .container
-      .header__inner
+    .header__inner
+      .container
         .header__desktop
           .header__row 
             .header__col
@@ -40,5 +40,39 @@ mixin header
               a.header__logo(href="#")
                 +logo-svg.header__logo-svg
             .header__col
-              .header__burger 
+              .header__burger(data-header-btn='')
                 +burger-svg.header__burger-svg
+                +cross-svg.header__burger-cross
+    .header-menu
+      .header-menu__container
+        ul.header-menu__list 
+          li.header-menu__item 
+            a.header-menu__button(href="#") 
+              .header-menu__text 
+                |О компании
+          li.header-menu__item(data-accordion='')
+            .header-menu__button(data-accordion-button='')
+              .header-menu__text 
+                |Каталог
+              .header-menu__icon
+                +arrow-svg.header-menu__svg 
+            .header-menu__dropdown(data-accordion-dropdown='')
+              ul.header-menu__dropdown-list
+                each item in ['Полиэфирные смолы', 'Материалы', 'Литье пластмасс (РПА, ТПА)', 'Прессование деталей'] 
+                  li.header-menu__dropdown-item 
+                    a.header-menu__link(href="#")
+                      |#{item}
+          li.header-menu__item 
+            a.header-menu__button(href="#") 
+              .header-menu__text 
+                |Информация
+          li.header-menu__item 
+            a.header-menu__button(href="#") 
+              .header-menu__text 
+                |Контакты
+        .header-menu__bot 
+          a.header-menu__phone(href="tel:+74842922199")
+            |+7 4842 922-199
+          .header-menu__btn 
+            +btn.btn--header
+              |Заказать звонок
