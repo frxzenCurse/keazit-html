@@ -1,5 +1,5 @@
 mixin footer
-  .footer-wrapper(class=(attributes.block == 'text-us' || attributes.block == 'requisite' ? 'alt' : ''))
+  .footer-wrapper(class=(attributes.block == 'text-us' || attributes.block == 'requisite'|| attributes.block == 'clients' ? 'alt' : ''))
     if (attributes.block)
       case attributes.block 
         when 'text-us'
@@ -8,6 +8,8 @@ mixin footer
           +text-us-white
         when 'requisite'
           +requisite
+        when 'clients'
+          +clients
     footer.footer(class=(attributes.block ? 'footer--big' : ''))
       .footer__inner 
         .container 
@@ -140,3 +142,33 @@ mixin requisite
             |Закрытое акционерное общество «ЭЛАТ-Инструмент»
           .requisite__text 
             |ИНН 4632120042 #[br] КПП 463201001 #[br] ОГРН 1104632003850
+
+mixin clients 
+  .clients.section
+    .container 
+      .category.category--req
+        |— клиенты
+      .main-page__team-top
+        .main-page__team-row
+          h3.section__title.clients__title
+            |Наши клиенты
+          .main-page__team-col 
+            .only-desktop
+              .main-page__team-text.clients__text
+                |Единственная компания в России, имеющая полный цикл создания полиэфирных премиксов и смолы.
+            .main-page__team-btn 
+              button.arrow-btn(data-slider-button = '3') 
+                +arrow-btn-svg.arrow-btn__icon
+        .only-mobile 
+          .main-page__team-text.clients__text
+            |Единственная компания в России, имеющая полный цикл создания полиэфирных премиксов и смолы.
+      .clients__slider 
+        .swiper-container.swiper-container--slide-height-max.swiper-container--slide-width-auto(data-slider-id='clients' data-slider-prev='1' data-slider-next='3')
+          .swiper-wrapper
+            - for (j = 0; j < 2; j++)
+              - for (i = 1; i < 6; i++)
+                .swiper-slide
+                  a.clients__card(href="#")  
+                    .clients__container 
+                      .clients__img 
+                        +picture(`client-${i}.jpg`)

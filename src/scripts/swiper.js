@@ -67,32 +67,27 @@ export function swiperInit() {
           break;
         case 'docs':
         case 'card':
+        case 'team':
           slider_options = {
             slidesPerView: "auto",
             spaceBetween: 0,
             speed: 500,
           };
           break;
-        case 11:
-        case 'm11':
+        case 'main':
           slider_options = {
-            pagination: {
-              el: `[data-swiper-pagination="${slider_id}"]`,
-              type: 'bullets',
-            },
-            on: {
-              slideChange: function(swiper) {
-                const index = swiper.realIndex
-                const thumbs = thumbsSlider.el.querySelectorAll('[data-thumb]')
-                const activeThumb = thumbsSlider.el.querySelector('[data-thumb].active')
-
-                activeThumb.classList.remove('active')
-                thumbs[index].classList.add('active')
-                thumbsSlider.slideTo(index)
-              }
-            }
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            speed: 1000,
           };
           break;
+        case 'clients':
+          slider_options = {
+            slidesPerView: "auto",
+            spaceBetween: 3,
+            speed: 500,
+          };
+        break;
       }
 
       slider_swiper = new Swiper(slider_el[0], slider_options);

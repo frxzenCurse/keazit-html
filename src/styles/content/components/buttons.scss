@@ -17,14 +17,15 @@
   &--header {
     width: rem(170px);
     
-    background-color: color(white);
+    // background-color: color(white);
+    background: transparent;
     border: 1px solid color(orange);
     color: color(orange);
     @media #{media("<")} {
       width: 100%;
 
       color: white;
-      background: transparent;
+      // background: transparent;
     }
   }
 }

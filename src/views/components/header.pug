@@ -1,5 +1,5 @@
 mixin header
-  header.header
+  header.header(class=attributes.class)
     .header__inner
       .container
         .header__desktop
@@ -12,18 +12,28 @@ mixin header
                   a.header__link(href="#")
                     .header__text 
                       |О компании
-                .header__nav-item 
-                  .header__item
+                .header__nav-item(data-accordion='' data-header-accordion='')
+                  .header__item(data-accordion-button='')
                     .header__text 
                       |Каталог
                     .header__icon 
                       +arrow-svg.header__svg
-                .header__nav-item 
-                  .header__item
+                    .header__item-dropdown(data-accordion-dropdown='')
+                      each item in ['Полиэфирные смолы', 'Материалы', 'Литье пластмасс (РПА, ТПА)', 'Прессование деталей']
+                        .header__item-wrapper 
+                          a.header__item-link(href="#")
+                            |#{item} 
+                .header__nav-item(data-accordion='' data-header-accordion='')
+                  .header__item(data-accordion-button='')
                     .header__text 
                       |Информация
                     .header__icon 
                       +arrow-svg.header__svg
+                    .header__item-dropdown(data-accordion-dropdown='')
+                      each item in ['Полиэфирные смолы', 'Материалы', 'Литье пластмасс (РПА, ТПА)', 'Прессование деталей']
+                        .header__item-wrapper 
+                          a.header__item-link(href="#")
+                            |#{item} 
                 .header__nav-item 
                   a.header__link(href="#")
                     .header__text 

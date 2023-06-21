@@ -1,4 +1,119 @@
 extends ../app
 
+block header 
+  +header.header--blue
+
+block footer
+  +footer(block = 'clients')
 
 block content
+  .main-page 
+    section.main-page__intro
+      .main-page__intro-qwe 
+      .main-page__intro-slider
+        .swiper-container(data-slider-id='main' data-slider-prev='0' data-slider-next='0')
+          .swiper-wrapper
+            - for (i = 0; i < 4; i++)
+              .swiper-slide.main-page__intro-slide
+                .main-page__intro-img 
+                  //- +picture('slide-1.jpg')
+                  img(src="assets/images/slide-1.png", alt="")
+                .container 
+                  .main-page__intro-content 
+                    .category.category--req 
+                      |— ПРодукция компании
+                    .main-page__intro-title 
+                      |Прессование деталей
+                    .main-page__intro-text 
+                      |Полиэфирные смолы для горячего прессования и ручной формовки,включая изофталиевые, ортофталиевые, терефталиевые и винилэфирные
+                    .main-page__intro-wrapper
+                      a.main-page__intro-btn(href="#") 
+                        .main-page__intro-caption 
+                          |Перейти в каталог
+                        .main-page__intro-icon
+                          +slide-btn-svg.main-page__intro-svg
+    section.main-page__stat.section
+      .main-page__stat-row 
+        .main-page__stat-col
+          .main-page__stat-tab 
+            .category 
+              |— О компании
+            h3.section__title 
+              |Наша компания
+            .main-page__stat-text 
+              |Единственная компания в России, имеющая полный цикл создания полиэфирных премиксов и смолы.
+            .main-page__stat-grid 
+              .main-page__stat-item
+                .main-page__stat-num
+                  |1 000 м. кв.
+                .main-page__stat-caption 
+                  |Производственная площадь
+              .main-page__stat-item
+                .main-page__stat-num
+                  |6
+                .main-page__stat-caption 
+                  |видов премиксов
+              .main-page__stat-item
+                .main-page__stat-num
+                  |200
+                .main-page__stat-caption 
+                  |тонн/месяц
+              .main-page__stat-item
+                .main-page__stat-num
+                  |3
+                .main-page__stat-caption 
+                  |вида смол
+        .main-page__stat-col
+          .main-page__graph
+            .main-page__graph-icon 
+              +graph-svg.main-page__graph-svg
+    section.main-page__team.section
+      .container 
+        .category 
+          |— Наш штаб
+        .main-page__team-top
+          .main-page__team-row
+            h3.section__title
+              |Команда
+            .main-page__team-col 
+              .only-desktop
+                .main-page__team-text 
+                  |Единственная компания в России, имеющая полный цикл создания полиэфирных премиксов и смолы.
+              .main-page__team-btn 
+                button.arrow-btn(data-slider-button = '2') 
+                  +arrow-btn-svg.arrow-btn__icon
+          .only-mobile 
+            .main-page__team-text 
+              |Единственная компания в России, имеющая полный цикл создания полиэфирных премиксов и смолы.
+        .main-page__team-slider 
+          .swiper-container.swiper-container--slide-height-max.swiper-container--slide-width-auto(data-slider-id='team' data-slider-prev='1' data-slider-next='2')
+            .swiper-wrapper
+              - for (i = 0; i < 3; i++)
+                .swiper-slide.main-page__team-slide
+                  .main-page__card
+                    .main-page__card-title
+                      |“Мы делаем только то, что нужно заказчику”
+                    .main-page__card-bot 
+                      .main-page__card-icon 
+                        +team-logo-svg.main-page__card-svg 
+                      .main-page__card-content 
+                        .main-page__card-heading 
+                          |Иванов Виктор
+                        .main-page__card-label 
+                          |Исполнительный директор ООО «КЗКМ»
+                    .main-page__card-img 
+                      img(src="assets/images/worker-1.png", alt="")
+                .swiper-slide.main-page__team-slide
+                  .main-page__card
+                    .main-page__card-title
+                      |“Мы делаем только то, что нужно заказчику”
+                    .main-page__card-bot 
+                      .main-page__card-icon 
+                        +team-logo-svg.main-page__card-svg 
+                      .main-page__card-content 
+                        .main-page__card-heading 
+                          |Иванов Виктор
+                        .main-page__card-label 
+                          |Исполнительный директор ООО «КЗКМ»
+                    .main-page__card-img 
+                      img(src="assets/images/worker-2.png", alt="")
