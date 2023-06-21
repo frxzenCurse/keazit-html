@@ -169,7 +169,13 @@
       }
     }
   }
-  &__stat-tab {}
+  &__stat-tab {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
   &__stat-text {
     margin-top: rem(28px);
     @media #{media("<")} {
@@ -362,6 +368,22 @@
       @media #{media("<")} {
         height: rem(184px);
       }
+    }
+  }
+}
+
+[data-svg-tab] {
+  cursor: pointer;
+
+  &.active {
+    stroke: color(orange);
+  }
+}
+[data-tab-text] {
+  pointer-events: none;
+  &.active {
+    path {
+      fill: color(white);
     }
   }
 }
