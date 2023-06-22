@@ -35,6 +35,10 @@
       "title": "Статья"
     },
     {
+      "href": "information",
+      "title": "Информация"
+    },
+    {
       "href": "contacts",
       "title": "Контакты"
     }

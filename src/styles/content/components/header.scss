@@ -141,6 +141,14 @@
     }
   }
 
+  &__link {
+    transition: $transition;
+
+    &:hover {
+      color: color(orange);
+    }
+  }
+
   &__text {
     font-weight: 500;
     @include fsl(14px, 120%);
@@ -182,6 +190,11 @@
   &__item-link {
     font-weight: 600;
     @include fsl(12px, 110%);
+    transition: $transition;
+
+    &:hover {
+      color: color(orange);
+    }
   }
 
   &__icon {
@@ -205,6 +218,11 @@
 
   &__phone {
     @include fsl(20px, 120%);
+    transition: $transition;
+
+    &:hover {
+      color: color(orange);
+    }
   }
 
   &__button {

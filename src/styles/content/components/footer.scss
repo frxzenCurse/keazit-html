@@ -1,5 +1,5 @@
 .footer {
-
+  $comp: &;
   
   &--big {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -73,6 +73,14 @@
     font-weight: 500;
     @include fsl(12px, 120%);
     color: color(light-blue);
+
+    &:not(div) {
+      transition: $transition;
+
+      &:hover {
+        color: color(orange);
+      }
+    }
   }
 
   &__made {
@@ -92,10 +100,22 @@
 
     display: flex;
     align-items: center;
+
+    &:hover {
+      #{$comp}__made-svg {
+        path {
+          fill: color(orange);
+        }
+      }
+    }
   }
   &__made-svg {
     width: rem(55px);
     height: rem(9px);
+
+    path {
+      transition: $transition;
+    }
   }
 
   &__column {
@@ -156,6 +176,11 @@
 
   &__link {
     color: color(white);
+    transition: $transition;
+
+    &:hover {
+      color: color(orange);
+    }
   }
 }
 

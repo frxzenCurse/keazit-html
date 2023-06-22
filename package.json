@@ -49,6 +49,8 @@
     "webpack-notifier": "^1.15.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.19",
+    "aos": "^2.3.4",
     "jquery": "^3.6.4",
     "normalize.css": "^8.0.1",
     "reset-css": "^5.0.1",

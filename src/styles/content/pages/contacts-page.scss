@@ -138,5 +138,13 @@
     @media #{media("<")} {
       @include fsl(16px);
     }
+
+    &.link {
+      transition: $transition;
+
+      &:hover {
+        color: color(orange);
+      }
+    }
   }
 }

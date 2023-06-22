@@ -96,6 +96,18 @@
     justify-content: space-between;
 
     cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: color(orange);
+      color: color(white);
+
+      #{$comp}__categories-svg {
+        path {
+          stroke: color(white);
+        }
+      }
+    }
 
     &.active {
       background-color: color(orange);
@@ -126,6 +138,10 @@
     height: var(--size);
 
     transform: rotate(-90deg);
+
+    path {
+      transition: $transition;
+    }
   }
 
   &__grid {

@@ -96,9 +96,14 @@
     transition: $transition;
     color: color(gray);
     cursor: pointer;
+    transition: $transition;
 
     &:not(:first-child) {
       margin-left: rem(26px);
+    }
+
+    &:hover {
+      color: color(orange);
     }
 
     &.active {

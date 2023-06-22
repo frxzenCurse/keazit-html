@@ -118,6 +118,13 @@
     width: rem(235px);
 
     border: 1px solid #EEF0F1;
+    background-color: color(white);
+    cursor: pointer;
+    // transition: $transition;
+
+    // &:hover {
+    //   border-width: 2px;
+    // }
   }
   &__doc-img {
     height: rem(272px);

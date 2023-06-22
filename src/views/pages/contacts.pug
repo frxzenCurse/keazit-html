@@ -33,7 +33,7 @@ block content
             .intro__wrapper 
               .intro__img 
                 +picture('contacts.jpg')
-              .intro__icon 
+              .intro__icon(data-aos='fade-up')
                 +contacts-svg.intro__svg
     section.contacts-page__section 
       .container 
@@ -51,12 +51,12 @@ block content
                 .contacts-page__card-item 
                   .contacts-page__card-label 
                     |Телефон
-                  .contacts-page__card-text 
+                  a.contacts-page__card-text.link(href="tel:+7(910)2162378") 
                     |+7 (910) 216-23-78
                 .contacts-page__card-item 
                   .contacts-page__card-label 
                     |E-mail
-                  .contacts-page__card-text 
+                  a.contacts-page__card-text.link(href="mailto:vikivanov@keaz.ru")  
                     |vikivanov@keaz.ru
           .contacts-page__card
             .contacts-page__card-wrapper
@@ -71,10 +71,10 @@ block content
                 .contacts-page__card-item 
                   .contacts-page__card-label 
                     |Телефон
-                  .contacts-page__card-text 
+                  a.contacts-page__card-text.link(href="tel:+7(910)2162378") 
                     |+7 (910) 740-42-70
                 .contacts-page__card-item 
                   .contacts-page__card-label 
                     |E-mail
-                  .contacts-page__card-text 
+                  a.contacts-page__card-text.link(href="mailto:vikivanov@keaz.ru") 
                     |vsavenkov@keaz.ru

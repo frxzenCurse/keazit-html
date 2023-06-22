@@ -123,6 +123,10 @@
     height: rem(451px);
     width: 100%;
 
+    transition: $transition;
+    overflow: hidden;
+
+
     &::before {
       content: "";
       position: absolute;
@@ -143,18 +147,32 @@
         background: linear-gradient(180deg, #FE5000 0%, rgba(254, 80, 0, 0) 100%);
       }
 
-      #{$comp}__card-label {
+      .card__label {
         color: color(white);
         opacity: 0.5;
       }
-      #{$comp}__card-btn {
+      .card__btn {
         color: color(white);
+
+        &:hover {
+          border-color: color(white);
+        }
+      }
+
+      
+    }
+
+    &:hover {
+      #{$comp}__category-img {
+        transform: scale(1.1);
       }
     }
   }
   &__category-img {
     height: 100%;
     width: 100%;
+
+    transition: $transition;
   }
   &__category-content {
     position: absolute;

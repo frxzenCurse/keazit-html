@@ -6,6 +6,8 @@ import "./scripts/tabs";
 import "./scripts/header";
 import "./scripts/accordion";
 import "./scripts/no-transition";
+import "./scripts/aos";
+import "./scripts/gallery";
 
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('[data-svg-tab]')

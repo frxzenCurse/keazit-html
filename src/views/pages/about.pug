@@ -20,23 +20,23 @@ block content
             .intro__wrapper 
               .intro__img 
                 +picture('about.jpg')
-              .intro__icon 
+              .intro__icon(data-aos='fade-up')
                 +about-svg.intro__svg
     section.about-page__section.section
       .container 
         .about-page__grid 
           .about-page__card
-            .about-page__card-icon 
+            .about-page__card-icon(data-aos='fade-up')
               +about-1-svg.about-page__card-svg
             .about-page__card-text 
               |Клиентоориентированность
           .about-page__card
-            .about-page__card-icon 
+            .about-page__card-icon(data-aos='fade-up')
               +about-2-svg.about-page__card-svg
             .about-page__card-text 
               |Развитие команды
           .about-page__card
-            .about-page__card-icon 
+            .about-page__card-icon(data-aos='fade-up')
               +about-3-svg.about-page__card-svg
             .about-page__card-text 
               |Экологическая ответственность
@@ -44,7 +44,7 @@ block content
           .category 
             |— награды
           .about-page__top 
-            .section__title 
+            .section__title
               |Наши сертификаты и награды
             .about-page__btn 
               button.arrow-btn(data-slider-button = '2') 
@@ -55,7 +55,7 @@ block content
                 - for (i = 0; i < 9; i++)
                   .swiper-slide.about-page__slider-slide
                     .about-page__doc
-                      .about-page__doc-img 
+                      .about-page__doc-img(data-src='assets/images/doc.jpg' data-fancybox='gallery')
                         +picture('doc.jpg')
                       .about-page__doc-title 
                         |Сертификат #[br] от “КЭАЗ”

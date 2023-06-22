@@ -22,6 +22,8 @@
   }
 
   &__card {
+    position: relative;
+    z-index: 0;
     padding: rem(7px);
 
     display: block;
@@ -33,6 +35,7 @@
     transform-origin: top right;
 
     &:hover {
+      z-index: 1;
       transform: rotate(-8deg);
 
       #{$comp}__container {
