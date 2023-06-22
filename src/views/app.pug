@@ -13,6 +13,7 @@ include ./components/breadcrumbs
 
 include ./components/header
 include ./components/footer
+include ./components/modals
 
 include ./components/grid-test
 
@@ -36,6 +37,7 @@ html(lang='ru')
 
       main.main
         block content
+        +call-modal
 
       block footer
         +footer

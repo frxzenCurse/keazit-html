@@ -1,0 +1,36 @@
+
+mixin call-modal 
+  .modal(data-modal='')
+    .modal__overlay(data-btn-modal='')
+    .modal__container
+      .form.form--white.form--modal
+        .form__label
+          |Обратная связь
+        .form__title 
+          |Заказать звонок
+        .form__text 
+          |Оставьте сообщение и Ваш номер телефона
+        form.form__form(action="/")
+          .form__item 
+            .form__grid 
+              input.form__input(type="text" placeholder='Ваше имя')
+              input.form__input(type="text" placeholder='Ваш номер телефона')
+          .form__item 
+            .select-wrapper 
+              .select
+                select.select__select(data-select-placeholder='Выберите пожалуйста направление' style='width: 100%')
+                  option(value='' disabled selected)
+                  each item in ['option1', 'option2', 'option3', ]
+                    option(value=item)
+                      |#{item}
+          .form__item 
+            textarea.form__textarea(placeholder='Опишите ваш вопрос')
+          .form__item 
+            .form__caption 
+              |При нажатии на кнопку ”Отправить” вы автоматически соглашаетесь на персональную обработку данных
+          .form__item 
+            .form__btn 
+              button.btn
+                |Отправить
+      .modal__cross(data-btn-modal='')
+        +cross-svg.modal__svg

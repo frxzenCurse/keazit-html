@@ -87,6 +87,19 @@ export function swiperInit() {
             slidesPerView: "auto",
             spaceBetween: 0,
             speed: 1000,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            on: {
+              init: function() {
+              },
+              slideChange: function(event) {
+                const fraction = document.querySelector('[data-slider-fraction]')
+                const index = event.realIndex + 1
+
+                fraction.textContent = index < 10 ? `0${index}` : index
+              },
+            }
           };
           break;
         case 'clients':

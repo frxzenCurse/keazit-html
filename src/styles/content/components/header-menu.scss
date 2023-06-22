@@ -1,16 +1,20 @@
 .header-menu {
   $comp: &;
   position: absolute;
-  top: calc(100% + 1px);
+  // top: calc(100% + 1px);
+  top: 0;
   right: 0;
   z-index: 1;
+  padding-top: rem(89px);
 
   width: 100vw;
-  height: calc(100vh - #{rem(90px)});
+  height: 100vh;
+  // height: calc(100vh - #{rem(90px)});
 
   transition: transform $transition;
   transform: translateX(100%);
-  background-color: #002F6C;;
+  // background-color: #002F6C;
+  background: var(--1, radial-gradient(162.14% 47.84% at 24.27% 93.19%, #094DA6 0%, rgba(9, 77, 166, 0.00) 100%), #002F6C);
 
   &__container {
     padding: rem(24px) 0;

@@ -41,7 +41,7 @@ mixin header
             .header__col
               a.header__phone(href="tel:+74842922199")
                 |+7 4842 922-199 
-              .header__button 
+              .header__button(data-btn-modal='')
                 +btn.btn--header
                   |Заказать звонок
         .header__mobile
@@ -83,6 +83,6 @@ mixin header
         .header-menu__bot 
           a.header-menu__phone(href="tel:+74842922199")
             |+7 4842 922-199
-          .header-menu__btn 
+          .header-menu__btn(data-btn-modal='')
             +btn.btn--header
               |Заказать звонок

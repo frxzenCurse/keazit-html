@@ -8,6 +8,7 @@ import "./scripts/accordion";
 import "./scripts/no-transition";
 import "./scripts/aos";
 import "./scripts/gallery";
+import "./scripts/modal";
 
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('[data-svg-tab]')

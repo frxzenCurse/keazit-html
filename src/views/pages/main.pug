@@ -9,7 +9,6 @@ block footer
 block content
   .main-page 
     section.main-page__intro
-      .main-page__intro-qwe 
       .main-page__intro-slider
         .swiper-container(data-slider-id='main' data-slider-prev='0' data-slider-next='0')
           .swiper-wrapper
@@ -17,7 +16,7 @@ block content
               .swiper-slide.main-page__intro-slide
                 .main-page__intro-img 
                   //- +picture('slide-1.jpg')
-                  img(src="assets/images/slide-1.png", alt="")
+                  img(src=`assets/images/slide-${i+1}.png`, alt="")
                 .container 
                   .main-page__intro-content 
                     .category.category--req 
@@ -32,6 +31,10 @@ block content
                           |Перейти в каталог
                         .main-page__intro-icon
                           +slide-btn-svg.main-page__intro-svg
+        .main-page__intro-pagination
+          .swiper-pagination.swiper-pagination--custom
+        .main-page__intro-fraction 
+          |#[span(data-slider-fraction) 01]/04
     section.main-page__stat.section
       .main-page__stat-row 
         .main-page__stat-col
@@ -123,6 +126,7 @@ block content
           .main-page__graph
             .main-page__graph-icon 
               +graph-svg.main-page__graph-svg
+              //- +graph-outer-svg.main-page__graph-outer
     section.main-page__team.section
       .container 
         .category 

@@ -5,6 +5,8 @@
     position: relative;
     z-index: 0;
 
+    overflow: hidden;
+
     &::before {
       content: "";
       position: absolute;
@@ -12,7 +14,13 @@
       top: 0;
       bottom: 0;
       right: rem(45px);
-
+      @media #{media("<")} {
+        right: rem(-64px);
+        bottom: rem(-54px);
+        top: auto;
+        width: rem(489px);
+        height: rem(592px);
+      }
       width: rem(843px);
       // height: rem(720px);
 
@@ -51,7 +59,7 @@
     width: 100vw;
     height: 100vh;
     
-    // overflow: hidden;
+    overflow: hidden;
 
     // &::before {
     //   content: "";
@@ -87,6 +95,10 @@
     top: 0;
     bottom: 0;
     z-index: 1;
+    @media #{media("<")} {
+      width: 100%;
+      top: auto;
+    }
 
     mix-blend-mode: soft-light;
     transition: transform 1s $transition-timing-function, right 1s $transition-timing-function;
@@ -100,18 +112,28 @@
   }
   &__intro-content {
     margin-top: rem(243px);
+    @media #{media("<")} {
+      margin-top: rem(136px);
+    }
     position: relative;
     z-index: 1;
   }
   &__intro-title {
     margin-top: rem(35px);
-
+    @media #{media("<")} {
+      margin-top: rem(27px);
+      @include fsl(40px);
+    }
     color: color(white);
     @include fsl(76px, 120%);
   }
   &__intro-text {
     margin-top: rem(45px);
-
+    @media #{media("<")} {
+      margin-top: rem(27px);
+      max-width: none;
+      @include fsl(14px);
+    }
     max-width: rem(651px);
 
     @include f-second(500);
@@ -119,7 +141,9 @@
   }
   &__intro-wrapper {
     margin-top: rem(12px);
-
+    @media #{media("<")} {
+      margin-top: rem(28px);
+    }
     display: flex;
   }
   &__intro-btn {
@@ -130,22 +154,61 @@
   &__intro-caption {
     color: color(white);
     @include f-second;
-    
+    @media #{media("<")} {
+      @include fsl(14px, 110%);
+    }
   }
   &__intro-icon {
     margin-left: rem(27px);
-
+    @media #{media("<")} {
+      margin-left: rem(18px);
+    }
     display: flex;
     align-items: center;
   }
   &__intro-svg {
     --size: #{rem(90px)};
-
+    @media #{media("<")} {
+      --size: #{rem(62px)};
+    }
     width: var(--size);
     height: var(--size);
   }
+  &__intro-pagination {
+    position: absolute;
+    right: rem(135px);
+    bottom: rem(208px);
+    z-index: 1;
+    @media #{media("<")} {
+      right: rem(15px);
+      bottom: rem(44px);
+    }
+  }
+  &__intro-fraction {
+    position: absolute;
+    right: rem(135px);
+    bottom: rem(61px);
+    z-index: 1;
+    @media #{media("<")} {
+      right: auto;
+      bottom: rem(44px);
+      left: rem(15px);
+      @include fsl(28px);
+    }
+    @include fsl(48px, 110%);
+    font-weight: 500;
+    color: color(white);
 
-  &__stat {}
+    span {
+      color: color(orange);
+    }
+  }
+
+  &__stat {
+    @media #{media("<")} {
+      padding-top: rem(84px);
+    }
+  }
   &__stat-row {
     display: flex;
     align-items: center;
@@ -218,8 +281,15 @@
 
     background: linear-gradient(180deg, #F3F3F3 33.33%, rgba(243, 243, 243, 0) 100%);
     border-radius: rem(370px) 0px 0px 0px;
+    @media #{media("<")} {
+      padding: rem(36px) rem(15px) rem(64px);
+      border-radius: rem(93px) 0px 0px 0px;
+    }
   }
   &__graph-icon {
+    position: relative;
+    z-index: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,8 +299,15 @@
     @media #{media("<")} {
       --size: #{rem(330px)};
     }
+    flex-shrink: 0;
     width: var(--size);
     height: var(--size);
+  }
+  &__graph-outer {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
   }
 
   &__team {
