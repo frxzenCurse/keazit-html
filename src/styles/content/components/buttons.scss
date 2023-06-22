@@ -28,6 +28,13 @@
       // background: transparent;
     }
   }
+  &--info {
+    width: rem(170px);
+    
+    background: transparent;
+    border: 1px solid color(orange);
+    color: color(orange);
+  }
 }
 
 .arrow-btn {

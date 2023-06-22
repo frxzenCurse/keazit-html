@@ -1,0 +1,120 @@
+extends ../app
+
+
+block footer
+  +footer(block = 'feedback')
+
+block content
+  .info-page 
+    section.section.section--first 
+      .container 
+        +breadcrumbs(page = 'Информация')
+        h1.section__title 
+          |Информаци
+        .info-page__tabs 
+          .info-page__tabs-wrapper
+            .info-page__tabs-item.active
+              |Особенности производственного процесса
+            each item in ['Оплата и доставка', 'Новости компании', 'Вакансии']
+              .info-page__tabs-item 
+                |#{item}
+    section.info-page__articles
+      .container 
+        .category 
+          |— Статьи
+        h3.info-page__title 
+          |Особенности производственного процесса
+        .info-page__articles-list 
+          - for (i = 0; i < 5; i++)
+            .info-page__articles-item 
+              .info-page__articles-label 
+                |Статья 1    —    20.03.2023
+              .info-page__articles-text 
+                |Однозначно, базовые сценарии поведения пользователей и по сей день остаются уделом либералов, которые жаждут быть объективно рассмотрены соответствующими инстанциями.
+        .info-page__articles-btn 
+          a.btn.btn--info(href="#")
+            |Еще статьи
+    section.info-page__pay
+      .container 
+        .category 
+          |— Оплата и доставка
+        .info-page__pay-top
+          h3.info-page__title 
+            |Оплата и доставка
+          .info-page__pay-text 
+            |Оплата осуществляется исключительно на основе безналичного расчета.
+        .info-page__pay-caption 
+          |Варианты доставки заказа:
+        .info-page__pay-grid
+          .info-page__pay-card
+            .info-page__pay-icon 
+              +loc-svg.info-page__pay-svg 
+            .info-page__pay-info 
+              |Самовывоз с территории предприятия (г. Курск)
+          .info-page__pay-card
+            .info-page__pay-icon 
+              +delivery-svg.info-page__pay-svg 
+            .info-page__pay-info 
+              |Доставка собственным транспортом заказчика
+          .info-page__pay-card
+            .info-page__pay-icon 
+              +company-svg.info-page__pay-svg 
+            .info-page__pay-info 
+              |Доставка с помощью транспортной компании
+    section.info-page__news 
+      .container
+        .info-page__top
+          .info-page__col
+            .category 
+              |— Новости
+            h3.info-page__title 
+              |Новости компании
+          .info-page__btn 
+            button.arrow-btn(data-slider-button = '2') 
+              +arrow-btn-svg.arrow-btn__icon
+        .info-page__news-slider 
+          .swiper-container.swiper-container--slide-width-auto.swiper-container--slide-height-max.swiper-container--visible(data-slider-id='info' data-slider-prev='' data-slider-next='2')
+            .swiper-wrapper
+              - for (i = 0; i < 9; i++)
+                .swiper-slide
+                  a.card.card--info(href="#") 
+                    .card__img 
+                      +picture('info-1.jpg')
+                    .card__bot 
+                      .card__date
+                        |21.03.2023
+                      .card__heading
+                        |С учётом сложившейся международной обстановки, убеждённость некоторых.
+      .info-page__vac
+        .container
+          .info-page__top
+            .info-page__col
+              .category 
+                |— Вакансии
+              h3.info-page__title 
+                |Специалист по маркетинговой деятельности
+            .info-page__btn 
+              a.arrow-btn(href="#") 
+                +arrow-btn-svg.arrow-btn__icon
+          .info-page__vac-card 
+            .info-page__vac-top
+              .info-page__vac-heading 
+                |Чем предстоит заниматься:
+              ul.info-page__vac-list
+                each item in ['Осуществлять исследования и анализ профильных рынков;', 'Осуществлять организацию выставочных мероприятий;', 'Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.', ] 
+                  li.info-page__vac-item 
+                    |#{item}
+            .info-page__vac-bot
+              .info-page__vac-heading.black
+                |Требования:
+              .info-page__vac-row
+                .info-page__vac-col
+                  ul.info-page__vac-list
+                    each item in ['Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;', 'Готовность к командировкам;', 'Высшее/неоконченное высшее образование.',  'Мы готовы вам предложить:'] 
+                      li.info-page__vac-item 
+                        |#{item}
+                .info-page__vac-col
+                  ul.info-page__vac-list
+                    each item in ['Официальное трудоустройство;', 'Стабильный график работы;', 'Условия для роста и развития профессиональных компетенций.', ] 
+                      li.info-page__vac-item 
+                        |#{item}

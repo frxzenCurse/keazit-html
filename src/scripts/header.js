@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     function checkScroll() {
       const scrollPos = window.scrollY
-      console.log(123)
+
       if (scrollPos < 1) {
         header.classList.add('header--blue')
       } else {

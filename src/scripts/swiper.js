@@ -65,6 +65,14 @@ export function swiperInit() {
             loop: true,
           };
           break;
+        case 'info':
+          slider_options = {
+            slidesPerView: "auto",
+
+            spaceBetween: 18,
+            speed: 500,
+          };
+          break;
         case 'docs':
         case 'card':
         case 'team':

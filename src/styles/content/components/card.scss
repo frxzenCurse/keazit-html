@@ -1,10 +1,26 @@
 .card {
+  $comp: &;
   display: flex;
   flex-direction: column;
-  height: rem(451px);
+  min-height: rem(451px);
   width: 100%;
 
   box-shadow: 0px 14px 54px rgba(0, 0, 0, 0.06);
+
+  &--info {
+    width: rem(280px);
+    min-height: rem(405px);
+
+    border: 1px solid #EDF0F2;
+    box-shadow: none;
+
+    #{$comp}__img {
+      height: rem(264px);
+    }
+    #{$comp}__bot {
+      padding: rem(23px) rem(21px);
+    }
+  }
 
   &__img {
     height: rem(249px);
@@ -40,5 +56,16 @@
   &__btn {
     color: color(orange);
     @include fsl(14px, 120%);
+  }
+
+  &__date {
+    margin-bottom: rem(10px);
+
+    color: color(orange);
+    @include fsl(12px);
+  }
+
+  &__heading {
+
   }
 }

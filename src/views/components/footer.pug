@@ -10,6 +10,8 @@ mixin footer
           +requisite
         when 'clients'
           +clients
+        when 'feedback'
+          +feedback
     footer.footer(class=(attributes.block ? 'footer--big' : ''))
       .footer__inner 
         .container 
@@ -172,3 +174,31 @@ mixin clients
                     .clients__container 
                       .clients__img 
                         +picture(`client-${i}.jpg`)
+
+mixin feedback 
+  .feedback
+    .container
+      .category.category--req 
+        |— обратная связь
+      .section__title.feedback__title 
+        |Отправляйте ваше резюме на электронную&nbsp; почту
+      .feedback__inner 
+        .feedback__item 
+          a.feedback__link(href="#")
+            .feedback__icon
+              +user-svg.feedback__svg 
+            .feedback__text 
+              |Иванов Виктор Сергеевич
+        .feedback__item 
+          a.feedback__link(href="mailto:mailto:vikivanov@keaz.ru")
+            .feedback__icon
+              +mail-svg.feedback__svg 
+            .feedback__text 
+              |mailto:vikivanov@keaz.ru
+        .feedback__item 
+          a.feedback__link(href="tel:+7(910)2162378")
+            .feedback__icon
+              +phone-svg.feedback__svg 
+            .feedback__text 
+              |+7 (910) 216-23-78
+
