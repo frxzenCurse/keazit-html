@@ -6,7 +6,7 @@
 		<title>keazit-html</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="541.css" rel="stylesheet">
+		<link href="366.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -102,7 +102,7 @@
 									</nav>
 								</div>
 								<div class="header__col"><a class="header__phone" href="tel:+74842922199">+7 4842 922-199</a>
-									<div class="header__button">
+									<div class="header__button" data-btn-modal="">
 										<div class="btn btn--header">Заказать звонок</div>
 									</div>
 								</div>
@@ -215,7 +215,7 @@
 								</a></li>
 						</ul>
 						<div class="header-menu__bot"><a class="header-menu__phone" href="tel:+74842922199">+7 4842 922-199</a>
-							<div class="header-menu__btn">
+							<div class="header-menu__btn" data-btn-modal="">
 								<div class="btn btn--header">Заказать звонок</div>
 							</div>
 						</div>
@@ -225,7 +225,6 @@
 			<main class="main">
 				<div class="main-page">
 					<section class="main-page__intro">
-						<div class="main-page__intro-qwe"></div>
 						<div class="main-page__intro-slider">
 							<div class="swiper-container" data-slider-id="main" data-slider-prev="0" data-slider-next="0">
 								<div class="swiper-wrapper">
@@ -249,7 +248,7 @@
 										</div>
 									</div>
 									<div class="swiper-slide main-page__intro-slide">
-										<div class="main-page__intro-img"><img src="assets/images/slide-1.png" alt=""></div>
+										<div class="main-page__intro-img"><img src="assets/images/slide-2.png" alt=""></div>
 										<div class="container">
 											<div class="main-page__intro-content">
 												<div class="category category--req">— ПРодукция компании</div>
@@ -268,7 +267,7 @@
 										</div>
 									</div>
 									<div class="swiper-slide main-page__intro-slide">
-										<div class="main-page__intro-img"><img src="assets/images/slide-1.png" alt=""></div>
+										<div class="main-page__intro-img"><img src="assets/images/slide-3.png" alt=""></div>
 										<div class="container">
 											<div class="main-page__intro-content">
 												<div class="category category--req">— ПРодукция компании</div>
@@ -287,7 +286,7 @@
 										</div>
 									</div>
 									<div class="swiper-slide main-page__intro-slide">
-										<div class="main-page__intro-img"><img src="assets/images/slide-1.png" alt=""></div>
+										<div class="main-page__intro-img"><img src="assets/images/slide-4.png" alt=""></div>
 										<div class="container">
 											<div class="main-page__intro-content">
 												<div class="category category--req">— ПРодукция компании</div>
@@ -307,6 +306,10 @@
 									</div>
 								</div>
 							</div>
+							<div class="main-page__intro-pagination">
+								<div class="swiper-pagination swiper-pagination--custom"></div>
+							</div>
+							<div class="main-page__intro-fraction"><span data-slider-fraction>01</span>/04</div>
 						</div>
 					</section>
 					<section class="main-page__stat section">
@@ -388,11 +391,9 @@
 											<mask id="path-1-inside-1_3_6567" fill="white">
 												<path d="M269 -7.27935e-05C417.565 -7.92875e-05 538 120.659 538 269.5C538 418.341 417.565 539 269 539C120.435 539 2.52434e-05 418.341 1.87374e-05 269.5C1.22313e-05 120.659 120.435 -6.62996e-05 269 -7.27935e-05ZM269 528.22C411.622 528.22 527.24 412.387 527.24 269.5C527.24 126.613 411.622 10.78 269 10.78C126.378 10.78 10.76 126.613 10.76 269.5C10.76 412.387 126.378 528.22 269 528.22Z"></path>
 											</mask>
-											<path d="M269 -7.27935e-05C417.565 -7.92875e-05 538 120.659 538 269.5C538 418.341 417.565 539 269 539C120.435 539 2.52434e-05 418.341 1.87374e-05 269.5C1.22313e-05 120.659 120.435 -6.62996e-05 269 -7.27935e-05ZM269 528.22C411.622 528.22 527.24 412.387 527.24 269.5C527.24 126.613 411.622 10.78 269 10.78C126.378 10.78 10.76 126.613 10.76 269.5C10.76 412.387 126.378 528.22 269 528.22Z" stroke="white" stroke-width="162" mask="url(#path-1-inside-1_3_6567)"></path>
 											<mask id="path-2-inside-2_3_6567" fill="white">
 												<path d="M269 -7.27935e-05C315.742 -7.48367e-05 361.677 12.2021 402.278 35.4037C442.88 58.6054 476.746 92.0058 500.54 132.313C524.333 172.621 537.233 218.444 537.967 265.267C538.701 312.09 527.245 358.296 504.727 399.333L495.297 394.139C516.915 354.744 527.913 310.386 527.208 265.436C526.503 220.486 514.12 176.496 491.278 137.801C468.436 99.1056 435.925 67.0412 396.947 44.7676C357.97 22.4939 313.872 10.78 269 10.78L269 -7.27935e-05Z"></path>
 											</mask>
-											<path d="M269 -7.27935e-05C315.742 -7.48367e-05 361.677 12.2021 402.278 35.4037C442.88 58.6054 476.746 92.0058 500.54 132.313C524.333 172.621 537.233 218.444 537.967 265.267C538.701 312.09 527.245 358.296 504.727 399.333L495.297 394.139C516.915 354.744 527.913 310.386 527.208 265.436C526.503 220.486 514.12 176.496 491.278 137.801C468.436 99.1056 435.925 67.0412 396.947 44.7676C357.97 22.4939 313.872 10.78 269 10.78L269 -7.27935e-05Z" stroke="#FFCAB1" stroke-width="162" mask="url(#path-2-inside-2_3_6567)"></path>
 											<mask id="path-3-inside-3_3_6567" fill="white">
 												<path d="M269 35.2882C398.235 35.2882 503 140.054 503 269.288C503 398.523 398.235 503.288 269 503.288C139.766 503.288 35.0001 398.523 35.0001 269.288C35.0001 140.054 139.765 35.2882 269 35.2882ZM269 421.388C353.003 421.388 421.1 353.291 421.1 269.288C421.1 185.286 353.003 117.188 269 117.188C184.998 117.188 116.9 185.286 116.9 269.288C116.9 353.291 184.998 421.388 269 421.388Z"></path>
 											</mask>
@@ -588,6 +589,49 @@
 							</div>
 						</div>
 					</section>
+				</div>
+				<div class="modal" data-modal="">
+					<div class="modal__overlay" data-btn-modal=""></div>
+					<div class="modal__container">
+						<div class="form form--white form--modal">
+							<div class="form__label">Обратная связь</div>
+							<div class="form__title">Заказать звонок</div>
+							<div class="form__text">Оставьте сообщение и Ваш номер телефона</div>
+							<form class="form__form" action="/">
+								<div class="form__item">
+									<div class="form__grid"><input class="form__input" placeholder="Ваше имя"><input class="form__input" placeholder="Ваш номер телефона"></div>
+								</div>
+								<div class="form__item">
+									<div class="select-wrapper">
+										<div class="select"><select class="select__select" data-select-placeholder="Выберите пожалуйста направление" style="width: 100%">
+												<option value="" disabled="disabled" selected="selected"></option>
+												<option value="option1">option1</option>
+												<option value="option2">option2</option>
+												<option value="option3">option3</option>
+											</select></div>
+									</div>
+								</div>
+								<div class="form__item"><textarea class="form__textarea" placeholder="Опишите ваш вопрос"></textarea></div>
+								<div class="form__item">
+									<div class="form__caption">При нажатии на кнопку ”Отправить” вы автоматически соглашаетесь на персональную обработку данных</div>
+								</div>
+								<div class="form__item">
+									<div class="form__btn"><button class="btn">Отправить</button></div>
+								</div>
+							</form>
+						</div>
+						<div class="modal__cross" data-btn-modal=""><svg class="modal__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_310_2053)">
+									<path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M18 18L6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+								<defs>
+									<clippath id="clip0_310_2053">
+										<rect width="24" height="24" fill="white"></rect>
+									</clippath>
+								</defs>
+							</svg></div>
+					</div>
 				</div>
 			</main>
 			<div class="footer-wrapper alt">

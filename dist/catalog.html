@@ -6,7 +6,7 @@
 		<title>keazit-html</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="541.css" rel="stylesheet">
+		<link href="366.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -102,7 +102,7 @@
 									</nav>
 								</div>
 								<div class="header__col"><a class="header__phone" href="tel:+74842922199">+7 4842 922-199</a>
-									<div class="header__button">
+									<div class="header__button" data-btn-modal="">
 										<div class="btn btn--header">Заказать звонок</div>
 									</div>
 								</div>
@@ -215,7 +215,7 @@
 								</a></li>
 						</ul>
 						<div class="header-menu__bot"><a class="header-menu__phone" href="tel:+74842922199">+7 4842 922-199</a>
-							<div class="header-menu__btn">
+							<div class="header-menu__btn" data-btn-modal="">
 								<div class="btn btn--header">Заказать звонок</div>
 							</div>
 						</div>
@@ -291,6 +291,49 @@
 							</div>
 						</div>
 					</section>
+				</div>
+				<div class="modal" data-modal="">
+					<div class="modal__overlay" data-btn-modal=""></div>
+					<div class="modal__container">
+						<div class="form form--white form--modal">
+							<div class="form__label">Обратная связь</div>
+							<div class="form__title">Заказать звонок</div>
+							<div class="form__text">Оставьте сообщение и Ваш номер телефона</div>
+							<form class="form__form" action="/">
+								<div class="form__item">
+									<div class="form__grid"><input class="form__input" placeholder="Ваше имя"><input class="form__input" placeholder="Ваш номер телефона"></div>
+								</div>
+								<div class="form__item">
+									<div class="select-wrapper">
+										<div class="select"><select class="select__select" data-select-placeholder="Выберите пожалуйста направление" style="width: 100%">
+												<option value="" disabled="disabled" selected="selected"></option>
+												<option value="option1">option1</option>
+												<option value="option2">option2</option>
+												<option value="option3">option3</option>
+											</select></div>
+									</div>
+								</div>
+								<div class="form__item"><textarea class="form__textarea" placeholder="Опишите ваш вопрос"></textarea></div>
+								<div class="form__item">
+									<div class="form__caption">При нажатии на кнопку ”Отправить” вы автоматически соглашаетесь на персональную обработку данных</div>
+								</div>
+								<div class="form__item">
+									<div class="form__btn"><button class="btn">Отправить</button></div>
+								</div>
+							</form>
+						</div>
+						<div class="modal__cross" data-btn-modal=""><svg class="modal__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_310_2053)">
+									<path d="M6 18L18 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M18 18L6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</g>
+								<defs>
+									<clippath id="clip0_310_2053">
+										<rect width="24" height="24" fill="white"></rect>
+									</clippath>
+								</defs>
+							</svg></div>
+					</div>
 				</div>
 			</main>
 			<div class="footer-wrapper">
