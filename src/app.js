@@ -19,12 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const id = this.getAttribute('data-svg-tab')
         const text = document.querySelector(`[data-tab-text="${id}"]`)
         const block = document.querySelector(`[data-svg-block="${id}"]`)
-        console.log(id)
+        const outer = document.querySelector(`[data-tab-outer="${id}"]`)
+
         document.querySelector('[data-svg-tab].active').classList.remove('active')
+        document.querySelector('[data-tab-outer].active').classList.remove('active')
         document.querySelector('[data-tab-text].active').classList.remove('active')
         document.querySelector('[data-svg-block].active').classList.remove('active')
         this.classList.add('active')
         text.classList.add('active')
+        outer.classList.add('active')
         block.classList.add('active')
       }
     })

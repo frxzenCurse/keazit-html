@@ -284,6 +284,7 @@
     @media #{media("<")} {
       padding: rem(36px) rem(15px) rem(64px);
       border-radius: rem(93px) 0px 0px 0px;
+      overflow: hidden;
     }
   }
   &__graph-icon {
@@ -304,10 +305,17 @@
     height: var(--size);
   }
   &__graph-outer {
+    --size: #{rem(736px)};
+    @media #{media("<")} {
+      --size: #{rem(450px)};
+    }
     position: absolute;
 
     display: flex;
     align-items: center;
+    flex-shrink: 0;
+    width: var(--size);
+    height: var(--size);
   }
 
   &__team {
@@ -451,13 +459,26 @@
 
 [data-svg-tab] {
   cursor: pointer;
+  stroke: color(white);
 
   &.active {
     stroke: color(orange);
   }
 }
+[data-tab-outer] {
+  stroke: color(white);
+
+  &.active {
+    stroke: #FFCAB1;
+  }
+}
 [data-tab-text] {
   pointer-events: none;
+
+  path {
+    fill: color(gray);
+  }
+
   &.active {
     path {
       fill: color(white);
