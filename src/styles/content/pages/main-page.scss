@@ -153,6 +153,14 @@
 
     display: flex;
     align-items: center;
+
+    &:hover {
+      #{$comp}__intro-svg {
+        rect:nth-child(1) {
+          fill: color(orange);
+        }
+      }
+    }
   }
   &__intro-caption {
     color: color(white);
@@ -176,6 +184,13 @@
     }
     width: var(--size);
     height: var(--size);
+
+    rect {
+      transition: $transition;
+      &:nth-child(1) {
+        fill: transparent;
+      }
+    }
   }
   &__intro-pagination {
     position: absolute;
