@@ -446,6 +446,9 @@
     display: flex;
     align-items: center;
 
+    transition: $transition;
+    opacity: 0.5;
+
     img {
       width: auto;
       height: rem(326px);
@@ -453,6 +456,10 @@
       @media #{media("<")} {
         height: rem(184px);
       }
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 }
@@ -482,6 +489,24 @@
   &.active {
     path {
       fill: color(white);
+    }
+  }
+}
+
+.graph-block {
+
+  &:hover {
+    [data-tab-text] {
+
+      path {
+        fill: color(blue);
+      }
+
+      &.active {
+        path {
+          fill: color(white);
+        }
+      }
     }
   }
 }

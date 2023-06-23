@@ -71,6 +71,7 @@ export function swiperInit() {
 
             spaceBetween: 18,
             speed: 500,
+            loop: true,
           };
           break;
         case 'docs':
@@ -80,6 +81,7 @@ export function swiperInit() {
             slidesPerView: "auto",
             spaceBetween: 0,
             speed: 500,
+            loop: true,
           };
           break;
         case 'main':
@@ -87,8 +89,14 @@ export function swiperInit() {
             slidesPerView: "auto",
             spaceBetween: 0,
             speed: 1000,
+            loop: true,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
             pagination: {
               el: '.swiper-pagination',
+              clickable: true,
             },
             on: {
               init: function() {
@@ -107,6 +115,7 @@ export function swiperInit() {
             slidesPerView: "auto",
             spaceBetween: 3,
             speed: 500,
+            loop: true,
           };
         break;
       }

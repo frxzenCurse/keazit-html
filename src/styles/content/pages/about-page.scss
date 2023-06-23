@@ -122,9 +122,9 @@
     cursor: pointer;
     // transition: $transition;
 
-    // &:hover {
-    //   border-width: 2px;
-    // }
+    &:hover {
+      border-width: 3px;
+    }
   }
   &__doc-img {
     height: rem(272px);

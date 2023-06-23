@@ -1,7 +1,8 @@
 .btn {
   padding: rem(16px) 0;
+  position: relative;
+  z-index: 0;
 
-  height: rem(48px);
   width: rem(230px);
   @media #{media("<")} {
     width: 100%;
@@ -15,10 +16,30 @@
   @include fsl(14px, 120%);
   transition: $transition;
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: rem(-2px);
+    right: rem(-2px);
+    bottom: rem(-2px);
+    top: rem(-2px);
+    z-index: -1;
+
+    background-color: transparent;
+    transition: $transition;
+    border-radius: rem(45px);
+  }
+
+  &:hover {
+
+    &::before {
+      background-color: color(orange);
+    }
+  }
+
   &--header {
     width: rem(170px);
     
-    // background-color: color(white);
     background: transparent;
     border: 1px solid color(orange);
     color: color(orange);
@@ -26,7 +47,10 @@
       width: 100%;
 
       color: white;
-      // background: transparent;
+    }
+
+    &::before {
+      display: none;
     }
 
     &:hover {
@@ -40,6 +64,10 @@
     background: transparent;
     border: 1px solid color(orange);
     color: color(orange);
+
+    &::before {
+      display: none;
+    }
 
     &:hover {
       background-color: color(orange);
