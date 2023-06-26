@@ -398,6 +398,12 @@
     }
     background-color: color(white);
     border: 1px solid #D3D7DC;
+
+    &:hover {
+      #{$comp}__card-img {
+        opacity: 1;
+      }
+    }
   }
   &__card-title {
     margin: rem(82px) 0 0 rem(52px);
@@ -474,10 +480,6 @@
       @media #{media("<")} {
         height: rem(184px);
       }
-    }
-
-    &:hover {
-      opacity: 1;
     }
   }
 }

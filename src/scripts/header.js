@@ -2,7 +2,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.header')
 
-  console.log(header.classList.contains('header--blue'))
   // scroll
   if (header.classList.contains('header--blue')) {
     checkScroll()
@@ -16,6 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
         header.classList.add('header--blue')
       } else {
         header.classList.remove('header--blue')
+      }
+
+      if (window.matchMedia(`(min-width: 1280px)`)) {
+        const accordion = header.querySelector('[data-accordion].active')
+  
+        if (accordion) {
+          const drop = accordion.querySelector('[data-accordion-dropdown]')
+  
+          accordion.classList.remove('active')
+          $(drop).slideUp()
+        }
       }
     }
   }
