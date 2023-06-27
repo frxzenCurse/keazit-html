@@ -215,8 +215,12 @@
       bottom: rem(-459px);
     }
   }
-  &__vac-card {
+  &__vac-slider {
     margin-top: rem(30px);
+
+    overflow: hidden;
+  }
+  &__vac-card {
     padding: rem(56px) rem(44px);
     @media #{media("<")} {
       padding: rem(40px) rem(30px);

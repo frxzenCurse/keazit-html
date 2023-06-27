@@ -237,15 +237,15 @@
 							<h1 class="section__title">Информаци</h1>
 							<div class="info-page__tabs">
 								<div class="info-page__tabs-wrapper">
-									<div class="info-page__tabs-item active">Особенности производственного процесса</div>
-									<div class="info-page__tabs-item">Оплата и доставка</div>
-									<div class="info-page__tabs-item">Новости компании</div>
-									<div class="info-page__tabs-item">Вакансии</div>
+									<div class="info-page__tabs-item active" data-scroll="#features">Особенности производственного процесса</div>
+									<div class="info-page__tabs-item" data-scroll="#pay">Оплата и доставка</div>
+									<div class="info-page__tabs-item" data-scroll="#news">Новости компании</div>
+									<div class="info-page__tabs-item" data-scroll="#vac">Вакансии</div>
 								</div>
 							</div>
 						</div>
 					</section>
-					<section class="info-page__articles">
+					<section class="info-page__articles" id="features">
 						<div class="container">
 							<div class="category">— Статьи</div>
 							<h3 class="info-page__title">Особенности производственного процесса</h3>
@@ -274,7 +274,7 @@
 							<div class="info-page__articles-btn"><a class="btn btn--info" href="#">Еще статьи</a></div>
 						</div>
 					</section>
-					<section class="info-page__pay">
+					<section class="info-page__pay" id="pay">
 						<div class="container">
 							<div class="category">— Оплата и доставка</div>
 							<div class="info-page__pay-top">
@@ -323,7 +323,7 @@
 							</div>
 						</div>
 					</section>
-					<section class="info-page__news">
+					<section class="info-page__news" id="news">
 						<div class="container">
 							<div class="info-page__top">
 								<div class="info-page__col">
@@ -443,46 +443,310 @@
 								</div>
 							</div>
 						</div>
-						<div class="info-page__vac">
+						<div class="info-page__vac" id="vac">
 							<div class="container">
 								<div class="info-page__top">
 									<div class="info-page__col">
 										<div class="category">— Вакансии</div>
 										<h3 class="info-page__title">Специалист по маркетинговой деятельности</h3>
 									</div>
-									<div class="info-page__btn"><a class="arrow-btn" href="#"><svg class="arrow-btn__icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<div class="info-page__btn"><button class="arrow-btn" data-slider-button="4"><svg class="arrow-btn__icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<rect x="0.5" y="0.5" width="65" height="65" rx="32.5" stroke="#FE5000"></rect>
 												<rect x="4.5" y="4.5" width="57" height="57" rx="28.5" fill="#FE5000" stroke="#FE5000"></rect>
 												<path d="M35.4007 39.0701L41.4707 33.0001L35.4007 26.9301" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 												<path d="M24.4708 33L41.3008 33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-											</svg></a></div>
+											</svg></button></div>
 								</div>
-								<div class="info-page__vac-card">
-									<div class="info-page__vac-top">
-										<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
-										<ul class="info-page__vac-list">
-											<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
-											<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
-											<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
-										</ul>
-									</div>
-									<div class="info-page__vac-bot">
-										<div class="info-page__vac-heading black">Требования:</div>
-										<div class="info-page__vac-row">
-											<div class="info-page__vac-col">
-												<ul class="info-page__vac-list">
-													<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
-													<li class="info-page__vac-item">Готовность к командировкам;</li>
-													<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
-													<li class="info-page__vac-item">Мы готовы вам предложить:</li>
-												</ul>
+								<div class="info-page__vac-slider">
+									<div class="swiper-container swiper-container--slide-height-max swiper-container--visible" data-slider-id="vac" data-slider-prev="" data-slider-next="4">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="info-page__vac-card">
+													<div class="info-page__vac-top">
+														<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
+														<ul class="info-page__vac-list">
+															<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
+															<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
+															<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
+														</ul>
+													</div>
+													<div class="info-page__vac-bot">
+														<div class="info-page__vac-heading black">Требования:</div>
+														<div class="info-page__vac-row">
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
+																	<li class="info-page__vac-item">Готовность к командировкам;</li>
+																	<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
+																	<li class="info-page__vac-item">Мы готовы вам предложить:</li>
+																</ul>
+															</div>
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Официальное трудоустройство;</li>
+																	<li class="info-page__vac-item">Стабильный график работы;</li>
+																	<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
-											<div class="info-page__vac-col">
-												<ul class="info-page__vac-list">
-													<li class="info-page__vac-item">Официальное трудоустройство;</li>
-													<li class="info-page__vac-item">Стабильный график работы;</li>
-													<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
-												</ul>
+											<div class="swiper-slide">
+												<div class="info-page__vac-card">
+													<div class="info-page__vac-top">
+														<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
+														<ul class="info-page__vac-list">
+															<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
+															<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
+															<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
+														</ul>
+													</div>
+													<div class="info-page__vac-bot">
+														<div class="info-page__vac-heading black">Требования:</div>
+														<div class="info-page__vac-row">
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
+																	<li class="info-page__vac-item">Готовность к командировкам;</li>
+																	<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
+																	<li class="info-page__vac-item">Мы готовы вам предложить:</li>
+																</ul>
+															</div>
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Официальное трудоустройство;</li>
+																	<li class="info-page__vac-item">Стабильный график работы;</li>
+																	<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="info-page__vac-card">
+													<div class="info-page__vac-top">
+														<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
+														<ul class="info-page__vac-list">
+															<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
+															<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
+															<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
+														</ul>
+													</div>
+													<div class="info-page__vac-bot">
+														<div class="info-page__vac-heading black">Требования:</div>
+														<div class="info-page__vac-row">
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
+																	<li class="info-page__vac-item">Готовность к командировкам;</li>
+																	<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
+																	<li class="info-page__vac-item">Мы готовы вам предложить:</li>
+																</ul>
+															</div>
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Официальное трудоустройство;</li>
+																	<li class="info-page__vac-item">Стабильный график работы;</li>
+																	<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="info-page__vac-card">
+													<div class="info-page__vac-top">
+														<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
+														<ul class="info-page__vac-list">
+															<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
+															<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
+															<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
+														</ul>
+													</div>
+													<div class="info-page__vac-bot">
+														<div class="info-page__vac-heading black">Требования:</div>
+														<div class="info-page__vac-row">
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
+																	<li class="info-page__vac-item">Готовность к командировкам;</li>
+																	<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
+																	<li class="info-page__vac-item">Мы готовы вам предложить:</li>
+																</ul>
+															</div>
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Официальное трудоустройство;</li>
+																	<li class="info-page__vac-item">Стабильный график работы;</li>
+																	<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="info-page__vac-card">
+													<div class="info-page__vac-top">
+														<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
+														<ul class="info-page__vac-list">
+															<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
+															<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
+															<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
+														</ul>
+													</div>
+													<div class="info-page__vac-bot">
+														<div class="info-page__vac-heading black">Требования:</div>
+														<div class="info-page__vac-row">
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
+																	<li class="info-page__vac-item">Готовность к командировкам;</li>
+																	<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
+																	<li class="info-page__vac-item">Мы готовы вам предложить:</li>
+																</ul>
+															</div>
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Официальное трудоустройство;</li>
+																	<li class="info-page__vac-item">Стабильный график работы;</li>
+																	<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="info-page__vac-card">
+													<div class="info-page__vac-top">
+														<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
+														<ul class="info-page__vac-list">
+															<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
+															<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
+															<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
+														</ul>
+													</div>
+													<div class="info-page__vac-bot">
+														<div class="info-page__vac-heading black">Требования:</div>
+														<div class="info-page__vac-row">
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
+																	<li class="info-page__vac-item">Готовность к командировкам;</li>
+																	<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
+																	<li class="info-page__vac-item">Мы готовы вам предложить:</li>
+																</ul>
+															</div>
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Официальное трудоустройство;</li>
+																	<li class="info-page__vac-item">Стабильный график работы;</li>
+																	<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="info-page__vac-card">
+													<div class="info-page__vac-top">
+														<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
+														<ul class="info-page__vac-list">
+															<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
+															<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
+															<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
+														</ul>
+													</div>
+													<div class="info-page__vac-bot">
+														<div class="info-page__vac-heading black">Требования:</div>
+														<div class="info-page__vac-row">
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
+																	<li class="info-page__vac-item">Готовность к командировкам;</li>
+																	<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
+																	<li class="info-page__vac-item">Мы готовы вам предложить:</li>
+																</ul>
+															</div>
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Официальное трудоустройство;</li>
+																	<li class="info-page__vac-item">Стабильный график работы;</li>
+																	<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="info-page__vac-card">
+													<div class="info-page__vac-top">
+														<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
+														<ul class="info-page__vac-list">
+															<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
+															<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
+															<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
+														</ul>
+													</div>
+													<div class="info-page__vac-bot">
+														<div class="info-page__vac-heading black">Требования:</div>
+														<div class="info-page__vac-row">
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
+																	<li class="info-page__vac-item">Готовность к командировкам;</li>
+																	<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
+																	<li class="info-page__vac-item">Мы готовы вам предложить:</li>
+																</ul>
+															</div>
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Официальное трудоустройство;</li>
+																	<li class="info-page__vac-item">Стабильный график работы;</li>
+																	<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="info-page__vac-card">
+													<div class="info-page__vac-top">
+														<div class="info-page__vac-heading">Чем предстоит заниматься:</div>
+														<ul class="info-page__vac-list">
+															<li class="info-page__vac-item">Осуществлять исследования и анализ профильных рынков;</li>
+															<li class="info-page__vac-item">Осуществлять организацию выставочных мероприятий;</li>
+															<li class="info-page__vac-item">Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.</li>
+														</ul>
+													</div>
+													<div class="info-page__vac-bot">
+														<div class="info-page__vac-heading black">Требования:</div>
+														<div class="info-page__vac-row">
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;</li>
+																	<li class="info-page__vac-item">Готовность к командировкам;</li>
+																	<li class="info-page__vac-item">Высшее/неоконченное высшее образование.</li>
+																	<li class="info-page__vac-item">Мы готовы вам предложить:</li>
+																</ul>
+															</div>
+															<div class="info-page__vac-col">
+																<ul class="info-page__vac-list">
+																	<li class="info-page__vac-item">Официальное трудоустройство;</li>
+																	<li class="info-page__vac-item">Стабильный график работы;</li>
+																	<li class="info-page__vac-item">Условия для роста и развития профессиональных компетенций.</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>

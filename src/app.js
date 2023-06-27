@@ -9,6 +9,7 @@ import "./scripts/no-transition";
 import "./scripts/aos";
 import "./scripts/gallery";
 import "./scripts/modal";
+import "./scripts/anchor-link";
 
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('[data-svg-tab]')

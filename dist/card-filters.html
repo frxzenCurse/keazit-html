@@ -225,7 +225,7 @@
 			<main class="main">
 				<div class="card-page">
 					<section class="section section--first">
-						<div class="card-page__section">
+						<div class="card-page__section" data-filters="">
 							<div class="container">
 								<div class="breadcrumbs">
 									<ul class="breadcrumbs__list">
@@ -243,31 +243,37 @@
 											<div class="category-page__categories-title">Выберите вариант</div>
 											<div class="category-page__categories-list">
 												<div class="category-page__categories-item">
-													<div class="category-page__categories-link active">
+													<div class="category-page__categories-link active" data-filters-item="">
 														<div class="category-page__categories-text">Смола бесстирольная</div>
 														<div class="category-page__categories-icon"><svg class="category-page__categories-svg" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M8.3002 3.72919L5.58353 6.44585C5.2627 6.76669 4.7377 6.76669 4.41686 6.44585L1.7002 3.72919" stroke="#292D32" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															</svg></div>
 													</div>
 												</div>
-												<div class="category-page__categories-item"><a class="category-page__categories-link" href="#">
+												<div class="category-page__categories-item">
+													<div class="category-page__categories-link" data-filters-item="">
 														<div class="category-page__categories-text">Смола ПМ</div>
 														<div class="category-page__categories-icon"><svg class="category-page__categories-svg" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M8.3002 3.72919L5.58353 6.44585C5.2627 6.76669 4.7377 6.76669 4.41686 6.44585L1.7002 3.72919" stroke="#292D32" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															</svg></div>
-													</a></div>
-												<div class="category-page__categories-item"><a class="category-page__categories-link" href="#">
+													</div>
+												</div>
+												<div class="category-page__categories-item">
+													<div class="category-page__categories-link" data-filters-item="">
 														<div class="category-page__categories-text">Смола на ПТФ</div>
 														<div class="category-page__categories-icon"><svg class="category-page__categories-svg" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M8.3002 3.72919L5.58353 6.44585C5.2627 6.76669 4.7377 6.76669 4.41686 6.44585L1.7002 3.72919" stroke="#292D32" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															</svg></div>
-													</a></div>
-												<div class="category-page__categories-item"><a class="category-page__categories-link" href="#">
+													</div>
+												</div>
+												<div class="category-page__categories-item">
+													<div class="category-page__categories-link" data-filters-item="">
 														<div class="category-page__categories-text">Смола термостойкая</div>
 														<div class="category-page__categories-icon"><svg class="category-page__categories-svg" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M8.3002 3.72919L5.58353 6.44585C5.2627 6.76669 4.7377 6.76669 4.41686 6.44585L1.7002 3.72919" stroke="#292D32" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 															</svg></div>
-													</a></div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -322,154 +328,611 @@
 										</div>
 									</div>
 								</div>
-								<div class="card-page__row">
-									<div class="card-page__col" data-tabs="">
-										<div class="card-page__tabs">
-											<div class="card-page__tab active" data-tabs-item="">ХАРАКТЕРИСТИКИ</div>
-											<div class="card-page__tab" data-tabs-item="">ОПИСАНИЕ</div>
-										</div>
-										<div class="card-page__blocks">
-											<div class="card-page__block active" data-tabs-block="">
-												<div class="card-page__wrapper">
-													<div class="card-page__table">
-														<div class="card-page__table-head">
-															<div class="card-page__table-grid">
-																<div class="card-page__table-label">Показатель</div>
-																<div class="card-page__table-label center">Значение</div>
-																<div class="card-page__table-label center">Ед. изм.</div>
-																<div class="card-page__table-label center">Метод анализа</div>
+								<div class="category-page__wrapper">
+									<div class="card-page__block active" data-filters-block="">
+										<div class="card-page__row">
+											<div class="card-page__col" data-tabs="">
+												<div class="card-page__tabs">
+													<div class="card-page__tab active" data-tabs-item="">ХАРАКТЕРИСТИКИ0</div>
+													<div class="card-page__tab" data-tabs-item="">ОПИСАНИЕ0</div>
+												</div>
+												<div class="card-page__blocks">
+													<div class="card-page__block active" data-tabs-block="">
+														<div class="card-page__wrapper">
+															<div class="card-page__table">
+																<div class="card-page__table-head">
+																	<div class="card-page__table-grid">
+																		<div class="card-page__table-label">Показатель</div>
+																		<div class="card-page__table-label center">Значение</div>
+																		<div class="card-page__table-label center">Ед. изм.</div>
+																		<div class="card-page__table-label center">Метод анализа</div>
+																	</div>
+																</div>
+																<div class="card-page__table-body">
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Внешний вид</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">Прозрачная светло-желтая жидкость без посторонних включенийние</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">-</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">Визуальный</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
 															</div>
 														</div>
-														<div class="card-page__table-body">
-															<div class="card-page__table-row">
-																<div class="card-page__table-grid">
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-heading">Внешний вид</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">Прозрачная светло-желтая жидкость без посторонних включенийние</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">-</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">Визуальный</div>
-																	</div>
-																</div>
+													</div>
+													<div class="card-page__block" data-tabs-block="">
+														<div class="card-page__list">
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
 															</div>
-															<div class="card-page__table-row">
-																<div class="card-page__table-grid">
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">750-900</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">мПа*с</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">ГОСТ 25271-93</div>
-																	</div>
-																</div>
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
 															</div>
-															<div class="card-page__table-row">
-																<div class="card-page__table-grid">
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">750-900</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">мПа*с</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">ГОСТ 25271-93</div>
-																	</div>
-																</div>
-															</div>
-															<div class="card-page__table-row">
-																<div class="card-page__table-grid">
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">750-900</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">мПа*с</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">ГОСТ 25271-93</div>
-																	</div>
-																</div>
-															</div>
-															<div class="card-page__table-row">
-																<div class="card-page__table-grid">
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">750-900</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">мПа*с</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">ГОСТ 25271-93</div>
-																	</div>
-																</div>
-															</div>
-															<div class="card-page__table-row">
-																<div class="card-page__table-grid">
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">750-900</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">мПа*с</div>
-																	</div>
-																	<div class="card-page__table-col">
-																		<div class="card-page__table-item">ГОСТ 25271-93</div>
-																	</div>
-																</div>
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="card-page__block" data-tabs-block="">
-												<div class="card-page__list">
-													<div class="card-page__list-item">
-														<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
-														<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+											<div class="card-page__col"><a class="button" href="#">
+													<div class="button__inner">
+														<div class="button__icon"><svg class="button__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M20.1668 9.16671V13.75C20.1668 18.3334 18.3335 20.1667 13.7502 20.1667H8.25016C3.66683 20.1667 1.8335 18.3334 1.8335 13.75V8.25004C1.8335 3.66671 3.66683 1.83337 8.25016 1.83337H12.8335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M20.1668 9.16671H16.5002C13.7502 9.16671 12.8335 8.25004 12.8335 5.50004V1.83337L20.1668 9.16671Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M6.4165 11.9167H11.9165" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M6.4165 15.5833H10.0832" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg></div>
+														<div class="button__text">Скачать тут</div>
 													</div>
-													<div class="card-page__list-item">
-														<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
-														<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
-													</div>
-													<div class="card-page__list-item">
-														<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
-														<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
-													</div>
-												</div>
-											</div>
+												</a></div>
 										</div>
 									</div>
-									<div class="card-page__col"><a class="button" href="#">
-											<div class="button__inner">
-												<div class="button__icon"><svg class="button__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-														<path d="M20.1668 9.16671V13.75C20.1668 18.3334 18.3335 20.1667 13.7502 20.1667H8.25016C3.66683 20.1667 1.8335 18.3334 1.8335 13.75V8.25004C1.8335 3.66671 3.66683 1.83337 8.25016 1.83337H12.8335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M20.1668 9.16671H16.5002C13.7502 9.16671 12.8335 8.25004 12.8335 5.50004V1.83337L20.1668 9.16671Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M6.4165 11.9167H11.9165" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-														<path d="M6.4165 15.5833H10.0832" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-													</svg></div>
-												<div class="button__text">Скачать тут</div>
+									<div class="card-page__block" data-filters-block="">
+										<div class="card-page__row">
+											<div class="card-page__col" data-tabs="">
+												<div class="card-page__tabs">
+													<div class="card-page__tab active" data-tabs-item="">ХАРАКТЕРИСТИКИ1</div>
+													<div class="card-page__tab" data-tabs-item="">ОПИСАНИЕ1</div>
+												</div>
+												<div class="card-page__blocks">
+													<div class="card-page__block active" data-tabs-block="">
+														<div class="card-page__wrapper">
+															<div class="card-page__table">
+																<div class="card-page__table-head">
+																	<div class="card-page__table-grid">
+																		<div class="card-page__table-label">Показатель</div>
+																		<div class="card-page__table-label center">Значение</div>
+																		<div class="card-page__table-label center">Ед. изм.</div>
+																		<div class="card-page__table-label center">Метод анализа</div>
+																	</div>
+																</div>
+																<div class="card-page__table-body">
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Внешний вид</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">Прозрачная светло-желтая жидкость без посторонних включенийние</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">-</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">Визуальный</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-page__block" data-tabs-block="">
+														<div class="card-page__list">
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+															</div>
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+															</div>
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
-										</a></div>
+											<div class="card-page__col"><a class="button" href="#">
+													<div class="button__inner">
+														<div class="button__icon"><svg class="button__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M20.1668 9.16671V13.75C20.1668 18.3334 18.3335 20.1667 13.7502 20.1667H8.25016C3.66683 20.1667 1.8335 18.3334 1.8335 13.75V8.25004C1.8335 3.66671 3.66683 1.83337 8.25016 1.83337H12.8335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M20.1668 9.16671H16.5002C13.7502 9.16671 12.8335 8.25004 12.8335 5.50004V1.83337L20.1668 9.16671Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M6.4165 11.9167H11.9165" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M6.4165 15.5833H10.0832" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg></div>
+														<div class="button__text">Скачать тут</div>
+													</div>
+												</a></div>
+										</div>
+									</div>
+									<div class="card-page__block" data-filters-block="">
+										<div class="card-page__row">
+											<div class="card-page__col" data-tabs="">
+												<div class="card-page__tabs">
+													<div class="card-page__tab active" data-tabs-item="">ХАРАКТЕРИСТИКИ2</div>
+													<div class="card-page__tab" data-tabs-item="">ОПИСАНИЕ2</div>
+												</div>
+												<div class="card-page__blocks">
+													<div class="card-page__block active" data-tabs-block="">
+														<div class="card-page__wrapper">
+															<div class="card-page__table">
+																<div class="card-page__table-head">
+																	<div class="card-page__table-grid">
+																		<div class="card-page__table-label">Показатель</div>
+																		<div class="card-page__table-label center">Значение</div>
+																		<div class="card-page__table-label center">Ед. изм.</div>
+																		<div class="card-page__table-label center">Метод анализа</div>
+																	</div>
+																</div>
+																<div class="card-page__table-body">
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Внешний вид</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">Прозрачная светло-желтая жидкость без посторонних включенийние</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">-</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">Визуальный</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-page__block" data-tabs-block="">
+														<div class="card-page__list">
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+															</div>
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+															</div>
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-page__col"><a class="button" href="#">
+													<div class="button__inner">
+														<div class="button__icon"><svg class="button__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M20.1668 9.16671V13.75C20.1668 18.3334 18.3335 20.1667 13.7502 20.1667H8.25016C3.66683 20.1667 1.8335 18.3334 1.8335 13.75V8.25004C1.8335 3.66671 3.66683 1.83337 8.25016 1.83337H12.8335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M20.1668 9.16671H16.5002C13.7502 9.16671 12.8335 8.25004 12.8335 5.50004V1.83337L20.1668 9.16671Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M6.4165 11.9167H11.9165" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M6.4165 15.5833H10.0832" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg></div>
+														<div class="button__text">Скачать тут</div>
+													</div>
+												</a></div>
+										</div>
+									</div>
+									<div class="card-page__block" data-filters-block="">
+										<div class="card-page__row">
+											<div class="card-page__col" data-tabs="">
+												<div class="card-page__tabs">
+													<div class="card-page__tab active" data-tabs-item="">ХАРАКТЕРИСТИКИ3</div>
+													<div class="card-page__tab" data-tabs-item="">ОПИСАНИЕ3</div>
+												</div>
+												<div class="card-page__blocks">
+													<div class="card-page__block active" data-tabs-block="">
+														<div class="card-page__wrapper">
+															<div class="card-page__table">
+																<div class="card-page__table-head">
+																	<div class="card-page__table-grid">
+																		<div class="card-page__table-label">Показатель</div>
+																		<div class="card-page__table-label center">Значение</div>
+																		<div class="card-page__table-label center">Ед. изм.</div>
+																		<div class="card-page__table-label center">Метод анализа</div>
+																	</div>
+																</div>
+																<div class="card-page__table-body">
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Внешний вид</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">Прозрачная светло-желтая жидкость без посторонних включенийние</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">-</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">Визуальный</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="card-page__table-row">
+																		<div class="card-page__table-grid">
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-heading">Динамическая вязкость при 23 °C</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">750-900</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">мПа*с</div>
+																			</div>
+																			<div class="card-page__table-col">
+																				<div class="card-page__table-item">ГОСТ 25271-93</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="card-page__block" data-tabs-block="">
+														<div class="card-page__list">
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+															</div>
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+															</div>
+															<div class="card-page__list-item">
+																<div class="card-page__list-heading">ОБЩАЯ ИНФОРМАЦИЯ</div>
+																<div class="card-page__list-text">Ненасыщенная полиэфирная смола (раствор полиэфира в стироле) на основе ортофталевой кислоты и комбинации гликолей. Высокореактивная, непредускоренная, ненаполненная.</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-page__col"><a class="button" href="#">
+													<div class="button__inner">
+														<div class="button__icon"><svg class="button__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M20.1668 9.16671V13.75C20.1668 18.3334 18.3335 20.1667 13.7502 20.1667H8.25016C3.66683 20.1667 1.8335 18.3334 1.8335 13.75V8.25004C1.8335 3.66671 3.66683 1.83337 8.25016 1.83337H12.8335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M20.1668 9.16671H16.5002C13.7502 9.16671 12.8335 8.25004 12.8335 5.50004V1.83337L20.1668 9.16671Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M6.4165 11.9167H11.9165" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M6.4165 15.5833H10.0832" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg></div>
+														<div class="button__text">Скачать тут</div>
+													</div>
+												</a></div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

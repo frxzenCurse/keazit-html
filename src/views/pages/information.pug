@@ -5,6 +5,21 @@ block footer
   +footer(block = 'feedback')
 
 block content
+  -
+    var ddata = [
+      {
+        text: "Оплата и доставка",
+        id: "#pay"
+      },
+      {
+        text: "Новости компании",
+        id: "#news"
+      },
+      {
+        text: "Вакансии",
+        id: "#vac"
+      },
+    ]
   .info-page 
     section.section.section--first 
       .container 
@@ -13,12 +28,12 @@ block content
           |Информаци
         .info-page__tabs 
           .info-page__tabs-wrapper
-            .info-page__tabs-item.active
+            .info-page__tabs-item.active(data-scroll='#features')
               |Особенности производственного процесса
-            each item in ['Оплата и доставка', 'Новости компании', 'Вакансии']
-              .info-page__tabs-item 
-                |#{item}
-    section.info-page__articles
+            each item in ddata
+              .info-page__tabs-item(data-scroll=item.id) 
+                |#{item.text}
+    section.info-page__articles#features
       .container 
         .category 
           |— Статьи
@@ -34,7 +49,7 @@ block content
         .info-page__articles-btn 
           a.btn.btn--info(href="#")
             |Еще статьи
-    section.info-page__pay
+    section.info-page__pay#pay
       .container 
         .category 
           |— Оплата и доставка
@@ -61,7 +76,7 @@ block content
               +company-svg.info-page__pay-svg 
             .info-page__pay-info 
               |Доставка с помощью транспортной компании
-    section.info-page__news 
+    section.info-page__news#news
       .container
         .info-page__top
           .info-page__col
@@ -85,7 +100,7 @@ block content
                         |21.03.2023
                       .card__heading
                         |С учётом сложившейся международной обстановки, убеждённость некоторых.
-      .info-page__vac
+      .info-page__vac#vac
         .container
           .info-page__top
             .info-page__col
@@ -94,27 +109,32 @@ block content
               h3.info-page__title 
                 |Специалист по маркетинговой деятельности
             .info-page__btn 
-              a.arrow-btn(href="#") 
+              button.arrow-btn(data-slider-button = '4') 
                 +arrow-btn-svg.arrow-btn__icon
-          .info-page__vac-card 
-            .info-page__vac-top
-              .info-page__vac-heading 
-                |Чем предстоит заниматься:
-              ul.info-page__vac-list
-                each item in ['Осуществлять исследования и анализ профильных рынков;', 'Осуществлять организацию выставочных мероприятий;', 'Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.', ] 
-                  li.info-page__vac-item 
-                    |#{item}
-            .info-page__vac-bot
-              .info-page__vac-heading.black
-                |Требования:
-              .info-page__vac-row
-                .info-page__vac-col
-                  ul.info-page__vac-list
-                    each item in ['Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;', 'Готовность к командировкам;', 'Высшее/неоконченное высшее образование.',  'Мы готовы вам предложить:'] 
-                      li.info-page__vac-item 
-                        |#{item}
-                .info-page__vac-col
-                  ul.info-page__vac-list
-                    each item in ['Официальное трудоустройство;', 'Стабильный график работы;', 'Условия для роста и развития профессиональных компетенций.', ] 
-                      li.info-page__vac-item 
-                        |#{item}
+          .info-page__vac-slider
+            .swiper-container.swiper-container--slide-height-max.swiper-container--visible(data-slider-id='vac' data-slider-prev='' data-slider-next='4')
+              .swiper-wrapper
+                - for (i = 0; i < 9; i++)
+                  .swiper-slide
+                    .info-page__vac-card 
+                      .info-page__vac-top
+                        .info-page__vac-heading 
+                          |Чем предстоит заниматься:
+                        ul.info-page__vac-list
+                          each item in ['Осуществлять исследования и анализ профильных рынков;', 'Осуществлять организацию выставочных мероприятий;', 'Разрабатывать рекламную продукцию и формировать коммуникационную политику в области работы с клиентами.', ] 
+                            li.info-page__vac-item 
+                              |#{item}
+                      .info-page__vac-bot
+                        .info-page__vac-heading.black
+                          |Требования:
+                        .info-page__vac-row
+                          .info-page__vac-col
+                            ul.info-page__vac-list
+                              each item in ['Знание основ маркетинга, опыт работы в сфере маркетинга будет преимуществом;', 'Готовность к командировкам;', 'Высшее/неоконченное высшее образование.',  'Мы готовы вам предложить:'] 
+                                li.info-page__vac-item 
+                                  |#{item}
+                          .info-page__vac-col
+                            ul.info-page__vac-list
+                              each item in ['Официальное трудоустройство;', 'Стабильный график работы;', 'Условия для роста и развития профессиональных компетенций.', ] 
+                                li.info-page__vac-item 
+                                  |#{item}

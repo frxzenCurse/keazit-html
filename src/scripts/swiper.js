@@ -77,6 +77,7 @@ export function swiperInit() {
         case 'docs':
         case 'card':
         case 'team':
+        case 'vac':
           slider_options = {
             slidesPerView: "auto",
             spaceBetween: 0,
