@@ -136,10 +136,11 @@
     }
   }
   &__pay-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    padding: rem(5px);
+
+    
     height: rem(235px);
     @media #{media("<")} {
       height: rem(200px);
@@ -147,6 +148,38 @@
 
     background-color: #FAFAFA;
     border: 1px solid #EDF0F2;
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      right: -1px;
+      top: -1px;
+      bottom: -1px;
+      z-index: -1;
+
+      // background-color: color(orange);
+      background: linear-gradient(145deg, #FE5000,  70%, #FEA800 100%);
+      opacity: 0;
+      transition: $transition;
+    }
+  }
+  &__pay-container {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    background-color: #FAFAFA;
   }
   &__pay-icon {
     margin-bottom: rem(40px);

@@ -62,20 +62,23 @@ block content
           |Варианты доставки заказа:
         .info-page__pay-grid
           .info-page__pay-card
-            .info-page__pay-icon 
-              +loc-svg.info-page__pay-svg 
-            .info-page__pay-info 
-              |Самовывоз с территории предприятия (г. Курск)
+            .info-page__pay-container
+              .info-page__pay-icon 
+                +loc-svg.info-page__pay-svg 
+              .info-page__pay-info 
+                |Самовывоз с территории предприятия (г. Курск)
           .info-page__pay-card
-            .info-page__pay-icon 
-              +delivery-svg.info-page__pay-svg 
-            .info-page__pay-info 
-              |Доставка собственным транспортом заказчика
+            .info-page__pay-container
+              .info-page__pay-icon 
+                +delivery-svg.info-page__pay-svg 
+              .info-page__pay-info 
+                |Доставка собственным транспортом заказчика
           .info-page__pay-card
-            .info-page__pay-icon 
-              +company-svg.info-page__pay-svg 
-            .info-page__pay-info 
-              |Доставка с помощью транспортной компании
+            .info-page__pay-container
+              .info-page__pay-icon 
+                +company-svg.info-page__pay-svg 
+              .info-page__pay-info 
+                |Доставка с помощью транспортной компании
     section.info-page__news#news
       .container
         .info-page__top
