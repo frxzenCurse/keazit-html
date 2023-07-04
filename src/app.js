@@ -10,6 +10,7 @@ import "./scripts/aos";
 import "./scripts/gallery";
 import "./scripts/modal";
 import "./scripts/anchor-link";
+import mask from "inputmask";
 
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('[data-svg-tab]')
@@ -34,3 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 })
+
+// phone mask
+{
+  document.addEventListener('DOMContentLoaded', () => {
+    Inputmask({ mask: "+7 (999) 999-99-99", showMaskOnHover: false }).mask(
+      "[data-mask-phone]"
+    )
+  })
+}

@@ -185,6 +185,8 @@
     width: var(--size);
     height: var(--size);
 
+    overflow: visible;
+
     rect {
       transition: $transition;
       &:nth-child(1) {

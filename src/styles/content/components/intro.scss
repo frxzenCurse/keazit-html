@@ -71,6 +71,9 @@
   }
 
   &__img {
+    position: relative;
+    z-index: 0;
+    
     height: rem(630px);
     @media #{media("<")} {
       height: rem(372px);

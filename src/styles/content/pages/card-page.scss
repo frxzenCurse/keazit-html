@@ -141,8 +141,8 @@
     padding: 0 rem(40px) 0 rem(20px);
 
     display: grid;
-    // grid-template-columns: repeat(4, 1fr);
-    grid-template-columns: rem(200px) rem(235px) auto auto;
+    grid-template-columns: 30% 30% 15% 25%;
+    // grid-template-columns: rem(200px) rem(235px) auto auto;
     @media #{media("<")} {
       grid-template-columns: rem(225px) rem(235px) rem(120px) rem(160px);
     }
